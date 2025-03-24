@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+venv/
+stockfish  # If you don’t want to upload the binary
