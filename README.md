@@ -4,9 +4,8 @@ A web-based chess game where you can play against Stockfish AI. Features difficu
 ## Setup
 1. Clone the repo: `git clone https://github.com/your-username/chess-vs-ai.git`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Download Stockfish binary and place it in the root folder.
-4. Run: `python app.py`
-5. Open `http://127.0.0.1:5000` in your browser.
+3. Run: `python app.py`
+4. Open `http://127.0.0.1:5000` in your browser.
 
 ## Features
 - Play as White or Black
