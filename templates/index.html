@@ -3,111 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess vs AI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.min.js"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <!-- Tailwind CSS CDN -->
+    <title>Chess vs AI (Stockfish)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        'fade-in': 'fadeIn 0.5s ease-in-out',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        }
-                    },
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'mono': ['Roboto Mono', 'monospace'],
-                    },
-                }
-            }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.min.js"></script>
+    <!-- Use the latest Chessboard.js from unpkg -->
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+    <style>
+        .glass {
+            background: rgba(38, 36, 43, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+        .glass-dark {
+            background: rgba(28, 26, 33, 0.95);
+        }
+        .hover-up {
+            transition: transform 0.15s ease;
+        }
+        .hover-up:hover {
+            transform: translateY(-1px);
+        }
+        .gradient-button {
+            background: #4169e1;
+        }
+        .gradient-button:hover {
+            background: #3154b3;
+        }
+        .spinner {
+            display: none;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #ffffff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            margin-left: 8px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        body.no-scroll-body {
+            overflow: hidden;
+        }
+        .highlight-selected {
+            background-color: rgba(155, 199, 0, 0.41) !important;
+        }
+        .highlight-move {
+            background-color: rgba(155, 199, 0, 0.41) !important;
+        }
+
+        .aspect-square {
+    aspect-ratio: 1 / 1;
+        }
+
+            /* Ensure the board container isn't clipped */
+            #game-container {
+    overflow: visible !important;
+        }
+
+        .relative {
+    overflow: visible !important;
+        }
+
+        /* Chess.com-like board styles */
+        .white-1e1d7 {
+            background-color: #edeed1;
+        }
+        .black-3c85d {
+            background-color: #779952;
+        }
+        
+        /* Modern layout adjustments */
+        .game-layout {
+            display: grid;
+            grid-template-columns: auto 300px;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .move-list {
+            background: rgba(38, 36, 43, 0.95);
+            padding: 1rem;
+            border-radius: 8px;
+            height: 400px;
+        }
+        
+        .control-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .controls button, 
+        .controls select {
+            width: 100%;
+            min-height: 2.5rem;
+        }
+
+        .controls .flex {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .controls .flex select,
+        .controls .flex button {
+            flex: 1;
+        }
+        
+        body {
+            background: #302e2c !important;
+            color: #ffffff;
+        }
+        
+        select, button {
+            background: #404040;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        select:hover, button:hover {
+            background: #4a4a4a;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-br from-green-50 to-blue-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 min-h-screen flex items-center justify-center p-4 transition-colors duration-300 font-sans">
-    <div class="bg-white dark:bg-gray-800 shadow-xl rounded-3xl p-8 max-w-4xl w-full md:p-6 sm:p-4 animate-fade-in transition-colors duration-300">
-        <div class="flex justify-between items-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 text-center tracking-tight">Chess vs AI (Stockfish)</h1>
-            <button id="dark-mode-toggle" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path id="sun" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                    <path id="moon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                </svg>
-            </button>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div class="w-full p-4">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-3xl font-bold text-white">Chess Game</h1>
+            <div id="user-info" class="flex items-center space-x-2">
+                <span id="username-display" class="text-lg"></span>
+                <button id="logout-button" class="p-2 bg-red-500 text-white rounded hover:bg-red-600 hidden" aria-label="Logout">Logout</button>
+            </div>
         </div>
-        
-        <!-- Chessboard with SVG Overlay -->
-        <div class="relative mx-auto w-full max-w-[400px]">
-            <div id="board" class="rounded-2xl shadow-md transition-shadow duration-300 hover:shadow-lg"></div>
-            <svg id="hint-arrow" class="absolute inset-0 w-full h-full pointer-events-none hidden" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                        <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
-                    </marker>
-                </defs>
-                <path d="" stroke="red" stroke-width="4" fill="none" marker-end="url(#arrowhead)" class="transition-all duration-300" />
-            </svg>
-        </div>
-        
-        <!-- Status and Hint -->
-        <div class="text-center mt-4">
-            <div id="status" class="text-lg text-gray-600 dark:text-gray-300 font-medium"></div>
-            <button id="hint-button" class="mt-2 bg-blue-500 text-white font-semibold py-1 px-4 rounded-2xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors">Get Hint</button>
-            <p id="hint" class="text-sm text-gray-500 dark:text-gray-400 mt-2 font-mono hidden"></p>
-        </div>
-        
-        <!-- Promotion Modal -->
-        <div id="promotion-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-lg">
-                <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-3">Promote Pawn To:</h3>
-                <div class="flex gap-4 justify-center">
-                    <button data-promotion="q" class="promotion-option bg-indigo-500 text-white py-2 px-4 rounded-2xl hover:bg-indigo-600 transition-colors">Queen</button>
-                    <button data-promotion="r" class="promotion-option bg-indigo-500 text-white py-2 px-4 rounded-2xl hover:bg-indigo-600 transition-colors">Rook</button>
-                    <button data-promotion="b" class="promotion-option bg-indigo-500 text-white py-2 px-4 rounded-2xl hover:bg-indigo-600 transition-colors">Bishop</button>
-                    <button data-promotion="n" class="promotion-option bg-indigo-500 text-white py-2 px-4 rounded-2xl hover:bg-indigo-600 transition-colors">Knight</button>
+
+        <div id="game-container" class="hidden game-layout">
+            <div class="board-section">
+                <div class="relative w-full aspect-square max-w-2xl">
+                    <div id="board" class="w-full h-full"></div>
+                    <svg id="hint-arrow" class="absolute inset-0 w-full h-full pointer-events-none hidden">
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                            </marker>
+                        </defs>
+                        <path fill="none" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)" />
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="control-panel">
+                <div class="move-list">
+                    <div class="max-h-full overflow-y-auto">
+                        <ul id="move-history" class="list-none"></ul>
+                    </div>
+                </div>
+                
+                <div class="controls space-y-2">
+                    <div class="flex space-x-3">
+                        <select id="difficulty" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Select difficulty">
+                            <option value="Easy">Easy</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                        <select id="player-color" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Select player color">
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                        <button id="interaction-mode" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Toggle interaction mode">
+                            <span id="mode-text">Tap to Move</span>
+                        </button>
+                    </div>
+                    <button id="reset-button" class="gradient-button p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Reset game">
+                        <span>Reset</span>
+                        <span class="spinner"></span>
+                    </button>
+                    <button id="save-button" class="bg-gradient-to-r from-emerald-500 to-green-600 p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Save game">
+                        <span>Save Game</span>
+                        <span class="spinner"></span>
+                    </button>
+                    <button id="resume-button" class="bg-gradient-to-r from-amber-500 to-yellow-600 p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Resume game">
+                        <span>Resume Game</span>
+                        <span class="spinner"></span>
+                    </button>
+                    <button id="hint-button" class="gradient-button p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Get hint">
+                        <span>Get Hint</span>
+                        <span class="spinner"></span>
+                    </button>
+                    <button id="dark-mode-toggle" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Toggle dark mode">
+                        <span id="sun" class="hidden">☀️</span>
+                        <span id="moon">🌙</span>
+                    </button>
+                    <div id="status" class="text-xl font-semibold" aria-live="polite"></div>
+                    <div class="w-full glass dark:glass-dark rounded-full h-2">
+                        <div class="probability-fill bg-gradient-to-r from-green-400 to-emerald-500 h-full rounded-full transition-all duration-300"></div>
+                    </div>
+                    <div id="probability" class="text-center">50%</div>
+                    <div id="hint" class="hidden text-center text-blue-500 dark:text-blue-400"></div>
                 </div>
             </div>
         </div>
-        
-        <!-- Probability Bar -->
-        <div class="mt-6">
-            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-6 overflow-hidden">
-                <div class="probability-fill h-full bg-gradient-to-r from-green-400 to-blue-500 dark:from-green-500 dark:to-indigo-600 transition-all duration-500" style="width: 50%;"></div>
+    </div>
+
+    <!-- Promotion Modal -->
+    <div id="promotion-modal" class="hidden fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center justify-center">
+        <div class="glass dark:glass-dark p-6 rounded-xl shadow-2xl transform transition-all duration-300 scale-95 hover:scale-100">
+            <h2 class="text-lg font-bold mb-2">Choose Promotion</h2>
+            <div class="flex space-x-3">
+                <button class="promotion-option gradient-button p-3 text-white rounded-lg hover-up shadow-lg" data-promotion="q" aria-label="Promote to Queen">Queen</button>
+                <button class="promotion-option p-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-promotion="r" aria-label="Promote to Rook">Rook</button>
+                <button class="promotion-option p-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-promotion="b" aria-label="Promote to Bishop">Bishop</button>
+                <button class="promotion-option p-2 bg-blue-500 text-white rounded hover:bg-blue-600" data-promotion="n" aria-label="Promote to Knight">Knight</button>
             </div>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Win Probability: <span id="probability" class="font-semibold">50%</span></p>
-        </div>
-        
-        <!-- Move History -->
-        <div class="mt-6 bg-gray-50 dark:bg-gray-900 rounded-3xl p-4 max-h-64 overflow-y-auto transition-colors duration-300">
-            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-3">Move History</h3>
-            <ul id="move-history" class="text-gray-600 dark:text-gray-300 text-sm divide-y divide-gray-200 dark:divide-gray-700 font-mono"></ul>
-        </div>
-        
-        <!-- Controls -->
-        <div class="mt-6 flex justify-center gap-4 flex-wrap">
-            <select id="difficulty" class="bg-gradient-to-br from-purple-500 to-indigo-500 text-white font-semibold py-2 px-4 rounded-3xl hover:from-purple-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-colors shadow-md">
-                <option value="Easy">Easy</option>
-                <option value="Medium" selected>Medium</option>
-                <option value="Hard">Hard</option>
-            </select>
-            <select id="player-color" class="bg-gradient-to-br from-purple-500 to-indigo-500 text-white font-semibold py-2 px-4 rounded-3xl hover:from-purple-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-colors shadow-md">
-                <option value="White" selected>Play as White</option>
-                <option value="Black">Play as Black</option>
-            </select>
-            <button onclick="resetGame()" class="bg-red-500 text-white font-semibold py-2 px-6 rounded-2xl hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 transition-colors shadow-md">Reset Game</button>
         </div>
     </div>
+
+    <!-- Resume Game Modal -->
+    <div id="resume-modal" class="hidden fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center justify-center">
+        <div class="glass dark:glass-dark p-8 rounded-xl shadow-2xl transform transition-all duration-300 scale-95 hover:scale-100 max-w-md w-full mx-4">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-100 text-center">Resume a Saved Game</h2>
+            <div class="relative mb-6">
+                <select id="game-list" class="w-full p-3 border-2 rounded-lg appearance-none dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 focus:outline-none focus:border-blue-500 transition-colors duration-200" aria-label="Select a saved game">
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <button id="load-game-button" class="flex-1 p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transform hover:scale-105 transition-all duration-200 font-semibold flex items-center justify-center" aria-label="Load selected game">
+                    <span>Load Game</span>
+                    <span class="spinner"></span>
+                </button>
+                <button onclick="$('#resume-modal').addClass('hidden')" class="flex-1 p-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transform hover:scale-105 transition-all duration-200 font-semibold" aria-label="Cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <script>
+        // Prevent body scrolling when game is active
+        $(document).ready(function() {
+            const $body = $('body');
+            $('#game-container').on('touchstart', function() {
+                $body.addClass('no-scroll-body');
+            });
+            $('#game-container').on('touchend', function() {
+                $body.removeClass('no-scroll-body');
+            });
+        });
+    </script>
 </body>
 </html>

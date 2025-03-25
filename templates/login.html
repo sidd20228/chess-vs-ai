@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chess vs AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .chess-pattern {
+            background-image: 
+                radial-gradient(circle at 100% 100%, rgba(66, 153, 225, 0.1) 0, rgba(66, 153, 225, 0.1) 12px, transparent 12px),
+                radial-gradient(circle at 0 0, rgba(66, 153, 225, 0.1) 0, rgba(66, 153, 225, 0.1) 12px, transparent 12px);
+            background-size: 50px 50px;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .form-container {
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+        }
+
+        .form-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .input-field {
+            transition: all 0.2s ease;
+        }
+
+        .input-field:focus {
+            transform: scale(1.02);
+        }
+
+        .auth-button {
+            transition: all 0.2s ease;
+        }
+
+        .auth-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .spinner {
+            display: none;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #ffffff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            margin-left: 8px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .password-strength {
+            font-size: 0.75rem;
+            margin-top: 4px;
+        }
+
+        .password-strength.weak { color: #ef4444; }
+        .password-strength.medium { color: #f59e0b; }
+        .password-strength.strong { color: #10b981; }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex items-center justify-center chess-pattern">
+    <div class="form-container bg-white/90 dark:bg-gray-800/90 p-10 rounded-2xl shadow-2xl w-full max-w-md border border-white/20">
+        <h1 class="text-4xl font-bold mb-8 text-center text-blue-600 dark:text-blue-400 tracking-tight">Chess vs AI</h1>
+        <div id="auth-form" class="space-y-6">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 dark:text-gray-300 text-center">Welcome Back</h2>
+            <div class="space-y-4">
+                <div>
+                    <label for="username" class="block text-gray-700 dark:text-gray-300 text-sm font-medium mb-2">Username</label>
+                    <input type="text" id="username" class="input-field w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:text-gray-200" required aria-describedby="username-error">
+                </div>
+                <div class="relative">
+                    <label for="password" class="block text-gray-700 dark:text-gray-300 text-sm font-medium mb-2">Password</label>
+                    <input type="password" id="password" class="input-field w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 dark:text-gray-200" required aria-describedby="password-error password-strength">
+                    <button type="button" id="toggle-password" class="absolute right-4 top-12 text-gray-500 dark:text-gray-400 focus:outline-none" aria-label="Toggle password visibility">👁️</button>
+                    <div id="password-strength" class="password-strength hidden"></div>
+                </div>
+            </div>
+            <div class="flex space-x-4 pt-4">
+                <button id="login-button" class="auth-button w-full py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 font-medium flex items-center justify-center">
+                    <span>Login</span>
+                    <span class="spinner"></span>
+                </button>
+                <button id="register-button" class="auth-button w-full py-3 bg-green-600 text-white rounded-xl shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 font-medium flex items-center justify-center">
+                    <span>Register</span>
+                    <span class="spinner"></span>
+                </button>
+            </div>
+            <div id="auth-error" class="text-red-500 text-center mt-4 hidden"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+            if (isDarkMode) {
+                $('html').addClass('dark');
+            }
+
+            // Toggle password visibility
+            $('#toggle-password').on('click', function() {
+                const $password = $('#password');
+                const type = $password.attr('type') === 'password' ? 'text' : 'password';
+                $password.attr('type', type);
+                $(this).text(type === 'password' ? '👁️' : '🙈');
+            });
+
+            // Password strength validation
+            $('#password').on('input', function() {
+                const password = $(this).val();
+                const $strength = $('#password-strength');
+                const minLength = 8;
+                const hasUpperCase = /[A-Z]/.test(password);
+                const hasLowerCase = /[a-z]/.test(password);
+                const hasNumbers = /\d/.test(password);
+                const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+                if (password.length === 0) {
+                    $strength.addClass('hidden').removeClass('weak medium strong').text('');
+                    return;
+                }
+
+                $strength.removeClass('hidden');
+                if (password.length < minLength) {
+                    $strength.removeClass('medium strong').addClass('weak').text('Weak: Password must be at least 8 characters');
+                } else if (!(hasUpperCase && hasLowerCase && hasNumbers && hasSpecialChar)) {
+                    $strength.removeClass('weak strong').addClass('medium').text('Medium: Add uppercase, lowercase, numbers, and special characters');
+                } else {
+                    $strength.removeClass('weak medium').addClass('strong').text('Strong: Password looks good!');
+                }
+            });
+
+            function showError(message) {
+                $('#auth-error').text(message).removeClass('hidden');
+                $('#password').val(''); // Clear password on error
+                $('#password-strength').addClass('hidden');
+            }
+
+            function toggleButtons(disable) {
+                const $loginButton = $('#login-button');
+                const $registerButton = $('#register-button');
+                $loginButton.prop('disabled', disable);
+                $registerButton.prop('disabled', disable);
+                $loginButton.find('.spinner').toggle(disable);
+                $registerButton.find('.spinner').toggle(disable);
+                $loginButton.find('span:first').text(disable ? 'Logging in...' : 'Login');
+                $registerButton.find('span:first').text(disable ? 'Registering...' : 'Register');
+            }
+
+            $('#login-button').on('click', function() {
+                const username = $('#username').val().trim();
+                const password = $('#password').val();
+                
+                if (!username || username.length < 3) {
+                    showError('Username must be at least 3 characters long');
+                    return;
+                }
+                if (!password || password.length < 8) {
+                    showError('Password must be at least 8 characters long');
+                    return;
+                }
+                const $strength = $('#password-strength');
+                if ($strength.hasClass('weak') || $strength.hasClass('medium')) {
+                    showError('Please use a stronger password');
+                    return;
+                }
+
+                toggleButtons(true);
+                $.ajax({
+                    url: '/login',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ username: username, password: password }),
+                    success: function(response) {
+                        localStorage.setItem('username', response.username);
+                        window.location.href = '/';
+                    },
+                    error: function(xhr) {
+                        const error = xhr.responseJSON?.error || 'Login failed';
+                        showError(error);
+                    },
+                    complete: function() {
+                        toggleButtons(false);
+                    }
+                });
+            });
+
+            $('#register-button').on('click', function() {
+                const username = $('#username').val().trim();
+                const password = $('#password').val();
+                
+                if (!username || username.length < 3) {
+                    showError('Username must be at least 3 characters long');
+                    return;
+                }
+                if (!password || password.length < 8) {
+                    showError('Password must be at least 8 characters long');
+                    return;
+                }
+                const $strength = $('#password-strength');
+                if ($strength.hasClass('weak') || $strength.hasClass('medium')) {
+                    showError('Please use a stronger password');
+                    return;
+                }
+
+                toggleButtons(true);
+                $.ajax({
+                    url: '/register',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ username: username, password: password }),
+                    success: function(response) {
+                        localStorage.setItem('username', response.username);
+                        window.location.href = '/';
+                    },
+                    error: function(xhr) {
+                        const error = xhr.responseJSON?.error || 'Registration failed';
+                        showError(error);
+                    },
+                    complete: function() {
+                        toggleButtons(false);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

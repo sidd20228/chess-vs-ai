@@ -2,6 +2,10 @@ let board;
 let game;
 let playerColor = 'White';
 let pendingMove = null;
+let currentGameId = null;
+let username = localStorage.getItem('username') || null;
+let selectedSquare = null;
+let useTapToMove = /Mobi|Android/i.test(navigator.userAgent); // Default to tap-to-move on mobile
 
 function initializeBoard() {
     if (typeof Chessboard === 'undefined') {
@@ -15,40 +19,194 @@ function initializeBoard() {
 
     game = new Chess();
     board = Chessboard('board', {
-        draggable: true,
+        draggable: !useTapToMove,
         position: 'start',
         onDrop: onDrop,
         onSnapEnd: onSnapEnd,
+        onDragStart: onDragStart,
+        onMouseoverSquare: onMouseoverSquare,
+        onMouseoutSquare: onMouseoutSquare,
+        onSquareClick: onSquareClick,
         pieceTheme: '/static/img/chesspieces/wikipedia/{piece}.png',
         orientation: playerColor.toLowerCase()
     });
+
+    const $board = $('#board');
+    $board.on('touchstart', function(e) {
+        console.log("Touchstart on board:", e.originalEvent.touches[0]);
+    });
+    $board.on('touchmove', function(e) {
+        console.log("Touchmove on board:", e.originalEvent.touches[0]);
+    });
+    $board.on('touchend', function(e) {
+        console.log("Touchend on board:", e.originalEvent.changedTouches[0]);
+        const touch = e.originalEvent.changedTouches[0];
+        const squareElement = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (squareElement && squareElement.classList.contains('square-55d63')) {
+            const squareClasses = squareElement.className.split(' ');
+            const squareClass = squareClasses.find(cls => cls.startsWith('square-'));
+            if (squareClass) {
+                const square = squareClass.replace('square-', '');
+                console.log("Detected touch on square:", square);
+                onSquareClick(square);
+            }
+        }
+    });
+
+    // Log board dimensions
+    console.log("Board dimensions:", {
+        width: $board.width(),
+        height: $board.height(),
+        parentWidth: $board.parent().width(),
+        parentHeight: $board.parent().height()
+    });
+
+    console.log("Board initialized with useTapToMove:", useTapToMove);
     updateStatus();
     fetchFen();
+    updateInteractionModeUI();
+}
+
+function updateInteractionModeUI() {
+    $('#mode-text').text(useTapToMove ? 'Tap to Move' : 'Drag to Move');
+    console.log("Interaction mode updated to:", useTapToMove ? 'Tap to Move' : 'Drag to Move');
+}
+
+function onDragStart(source, piece, position, orientation) {
+    const isPlayerTurn = (playerColor === 'White' && game.turn() === 'w') || (playerColor === 'Black' && game.turn() === 'b');
+    if (!isPlayerTurn) {
+        console.log("Not your turn! Player color:", playerColor, "Game turn:", game.turn());
+        return false;
+    }
+    if ((playerColor === 'White' && piece.search(/^b/) !== -1) ||
+        (playerColor === 'Black' && piece.search(/^w/) !== -1)) {
+        console.log("Cannot drag opponent's piece!");
+        return false;
+    }
+    console.log("Drag started:", source, piece);
+    return true;
+}
+
+function onMouseoverSquare(square, piece) {
+    if (!piece || !useTapToMove) return;
+    const moves = game.moves({ square: square, verbose: true });
+    if (moves.length === 0) return;
+
+    const squaresToHighlight = moves.map(move => move.to);
+    squaresToHighlight.forEach(square => {
+        $(`#board .square-${square}`).addClass('highlight-move');
+    });
+}
+
+function onMouseoutSquare(square, piece) {
+    if (!useTapToMove) return;
+    $(`#board .square-55d63`).removeClass('highlight-move');
+}
+
+function onSquareClick(square) {
+    console.log("onSquareClick triggered for square:", square);
+    console.log("Current useTapToMove state:", useTapToMove);
+    if (!useTapToMove) {
+        console.log("Tap-to-move is disabled, skipping onSquareClick logic");
+        return;
+    }
+
+    const piece = game.get(square);
+    console.log("Piece on square:", piece);
+
+    if (selectedSquare) {
+        console.log("Selected square exists:", selectedSquare, "Attempting move to:", square);
+        const move = {
+            from: selectedSquare,
+            to: square,
+            promotion: 'q'
+        };
+
+        const isPlayerTurn = (playerColor === 'White' && game.turn() === 'w') || (playerColor === 'Black' && game.turn() === 'b');
+        console.log("Is player's turn?", isPlayerTurn, "Player color:", playerColor, "Game turn:", game.turn());
+        if (!isPlayerTurn) {
+            console.log("Not your turn! Clearing selection.");
+            selectedSquare = null;
+            $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
+            return;
+        }
+
+        const pieceOnSquare = game.get(selectedSquare);
+        console.log("Piece on selected square:", pieceOnSquare);
+        const isPawn = pieceOnSquare && pieceOnSquare.type === 'p';
+        const isPromotion = isPawn && (
+            (pieceOnSquare.color === 'w' && square.charAt(1) === '8') ||
+            (pieceOnSquare.color === 'b' && square.charAt(1) === '1')
+        );
+        console.log("Is this a promotion move?", isPromotion);
+
+        if (isPromotion) {
+            console.log("Pawn promotion detected:", selectedSquare, square);
+            pendingMove = { source: selectedSquare, target: square };
+            $('#promotion-modal').removeClass('hidden');
+            selectedSquare = null;
+            $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
+            return;
+        }
+
+        console.log("Current FEN before move:", game.fen());
+        const validMove = game.move(move);
+        console.log("Move result:", validMove);
+        if (validMove === null) {
+            console.log("Invalid move:", selectedSquare, square);
+            selectedSquare = null;
+            $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
+            return;
+        }
+
+        console.log("Move is valid, sending to server:", selectedSquare + square);
+        makeServerMove(selectedSquare + square);
+        selectedSquare = null;
+        $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
+        return;
+    }
+
+    if (piece && (
+        (playerColor === 'White' && piece.color === 'w') ||
+        (playerColor === 'Black' && piece.color === 'b')
+    )) {
+        console.log("Selecting piece on square:", square);
+        selectedSquare = square;
+        $(`#board .square-${square}`).addClass('highlight-selected');
+        const moves = game.moves({ square: square, verbose: true });
+        console.log("Possible moves:", moves);
+        const squaresToHighlight = moves.map(move => move.to);
+        squaresToHighlight.forEach(square => {
+            $(`#board .square-${square}`).addClass('highlight-move');
+        });
+    } else {
+        console.log("No valid piece to select, clearing selection.");
+        selectedSquare = null;
+        $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
+    }
 }
 
 function squareToCoords(square, boardSize) {
     const files = 'abcdefgh';
-    const file = files.indexOf(square[0]); // a=0, h=7
-    const rank = parseInt(square[1]); // 1=1, 8=8
+    const file = files.indexOf(square[0]);
+    const rank = parseInt(square[1]);
 
     const squareSize = boardSize / 8;
     let x, y;
 
     if (playerColor.toLowerCase() === 'white') {
-        // White perspective: a1 at bottom-left
-        x = file * squareSize; // a=0 (left), h=7*squareSize (right)
-        y = (8 - rank) * squareSize; // 1=7*squareSize (bottom), 8=0 (top)
+        x = file * squareSize;
+        y = (8 - rank) * squareSize;
     } else {
-        // Black perspective: h8 at bottom-left
-        x = (7 - file) * squareSize; // h=0 (left), a=7*squareSize (right)
-        y = (rank - 1) * squareSize; // 8=7*squareSize (bottom), 1=0 (top)
+        x = (7 - file) * squareSize;
+        y = (rank - 1) * squareSize;
     }
 
-    return { x: x + squareSize / 2, y: y + squareSize / 2 }; // Center of square
+    return { x: x + squareSize / 2, y: y + squareSize / 2 };
 }
 
 function drawHintArrow(fromSquare, toSquare) {
-    const boardSize = $('#board').width(); // Dynamic board size
+    const boardSize = $('#board').width();
     const from = squareToCoords(fromSquare, boardSize);
     const to = squareToCoords(toSquare, boardSize);
 
@@ -57,11 +215,30 @@ function drawHintArrow(fromSquare, toSquare) {
     const $arrow = $('#hint-arrow path');
     const path = `M${from.x},${from.y} L${to.x},${to.y}`;
     $arrow.attr('d', path);
+    $arrow.attr('marker-end', 'url(#arrowhead)'); // Ensure the marker is applied
     $('#hint-arrow').removeClass('hidden').attr('class', 'absolute inset-0 w-full h-full pointer-events-none text-red-500 dark:text-red-400');
 }
 
 function clearHintArrow() {
     $('#hint-arrow').addClass('hidden');
+}
+
+function showToast(message, type = 'success') {
+    Toastify({
+        text: message,
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: type === 'success' ? "#10b981" : "#ef4444",
+        stopOnFocus: true,
+    }).showToast();
+}
+
+function toggleButtonSpinner(buttonId, enable) {
+    const $button = $(`#${buttonId}`);
+    $button.find('.spinner').toggle(enable);
+    $button.find('span:first').text(enable ? 'Loading...' : $button.find('span:first').data('original-text'));
+    $button.prop('disabled', enable);
 }
 
 $(document).ready(function() {
@@ -79,7 +256,20 @@ $(document).ready(function() {
         console.log("Loaded light mode from localStorage");
     }
 
-    initializeBoard();
+    $('#reset-button span:first').data('original-text', 'Reset');
+    $('#save-button span:first').data('original-text', 'Save Game');
+    $('#resume-button span:first').data('original-text', 'Resume Game');
+    $('#hint-button span:first').data('original-text', 'Get Hint');
+    $('#load-game-button span:first').data('original-text', 'Load Game');
+
+    if (username) {
+        $('#username-display').text(`Welcome, ${username}`);
+        $('#logout-button').removeClass('hidden');
+        $('#game-container').removeClass('hidden');
+        initializeBoard();
+    } else {
+        window.location.href = '/login';
+    }
 
     const $toggleButton = $('#dark-mode-toggle');
     if ($toggleButton.length === 0) {
@@ -98,8 +288,27 @@ $(document).ready(function() {
         });
     }
 
+    $('#interaction-mode').on('click', function() {
+        useTapToMove = !useTapToMove;
+        board = Chessboard('board', {
+            draggable: !useTapToMove,
+            position: game.fen(),
+            onDrop: onDrop,
+            onSnapEnd: onSnapEnd,
+            onDragStart: onDragStart,
+            onMouseoverSquare: onMouseoverSquare,
+            onMouseoutSquare: onMouseoutSquare,
+            onSquareClick: onSquareClick,
+            pieceTheme: '/static/img/chesspieces/wikipedia/{piece}.png',
+            orientation: playerColor.toLowerCase()
+        });
+        updateInteractionModeUI();
+        showToast(`Switched to ${useTapToMove ? 'Tap to Move' : 'Drag to Move'} mode`);
+    });
+
     $('#hint-button').on('click', function() {
         console.log("Hint button clicked");
+        toggleButtonSpinner('hint-button', true);
         $.get('/hint', function(data) {
             console.log("Hint response:", data);
             const $hint = $('#hint');
@@ -118,8 +327,9 @@ $(document).ready(function() {
             }
         }).fail(function(xhr, status, error) {
             console.error("Failed to fetch hint:", status, error);
-            $('#hint').text('Error fetching hint').removeClass('hidden');
-            setTimeout(() => $('#hint').addClass('hidden'), 5000);
+            showToast("Failed to fetch hint", "error");
+        }).always(function() {
+            toggleButtonSpinner('hint-button', false);
         });
     });
 
@@ -144,12 +354,17 @@ $(document).ready(function() {
     });
 
     $('#reset-button').on('click', resetGame);
+    $('#save-button').on('click', saveGame);
+    $('#resume-button').on('click', showResumeModal);
+    $('#load-game-button').on('click', resumeGame);
+    $('#logout-button').on('click', logout);
 });
 
 function fetchFen() {
     $.get('/fen', function(data) {
         console.log("Fetched FEN response:", data);
         playerColor = data.player_color;
+        currentGameId = data.game_id;
         board.orientation(playerColor.toLowerCase());
         board.position(data.fen);
         game.load(data.fen);
@@ -158,10 +373,16 @@ function fetchFen() {
         updateStatus();
     }).fail(function(xhr, status, error) {
         console.error("Failed to fetch FEN:", status, error);
+        if (xhr.status === 401) {
+            window.location.href = '/login';
+        } else {
+            showToast("Failed to load game state", "error");
+        }
     });
 }
 
-function onDrop(source, target) {
+function onDrop(source, target, piece, newPos, oldPos, orientation) {
+    console.log("onDrop called:", source, target, piece);
     const move = {
         from: source,
         to: target,
@@ -174,11 +395,11 @@ function onDrop(source, target) {
         return 'snapback';
     }
 
-    const piece = game.get(source);
-    const isPawn = piece && piece.type === 'p';
+    const pieceOnSquare = game.get(source);
+    const isPawn = pieceOnSquare && pieceOnSquare.type === 'p';
     const isPromotion = isPawn && (
-        (piece.color === 'w' && target.charAt(1) === '8') ||
-        (piece.color === 'b' && target.charAt(1) === '1')
+        (pieceOnSquare.color === 'w' && target.charAt(1) === '8') ||
+        (pieceOnSquare.color === 'b' && target.charAt(1) === '1')
     );
 
     if (isPromotion) {
@@ -189,12 +410,16 @@ function onDrop(source, target) {
     }
 
     const validMove = game.move(move);
-    if (validMove === null) return 'snapback';
+    if (validMove === null) {
+        console.log("Invalid move:", source, target);
+        return 'snapback';
+    }
 
     makeServerMove(source + target);
 }
 
 function makeServerMove(moveString) {
+    console.log("Making server move:", moveString);
     $.ajax({
         url: '/move',
         type: 'POST',
@@ -206,8 +431,10 @@ function makeServerMove(moveString) {
                 console.warn("Move error:", response.error);
                 game.undo();
                 board.position(game.fen());
+                showToast(response.error, "error");
             } else {
                 playerColor = response.player_color;
+                currentGameId = response.game_id;
                 board.orientation(playerColor.toLowerCase());
                 board.position(response.fen);
                 game.load(response.fen);
@@ -223,8 +450,13 @@ function makeServerMove(moveString) {
         },
         error: function(xhr, status, error) {
             console.error("Move request failed:", status, error);
-            game.undo();
-            board.position(game.fen());
+            if (xhr.status === 401) {
+                window.location.href = '/login';
+            } else {
+                game.undo();
+                board.position(game.fen());
+                showToast("Failed to make move", "error");
+            }
         }
     });
 }
@@ -259,6 +491,7 @@ function updateHistory(history) {
 function resetGame() {
     const difficulty = $('#difficulty').val();
     const player_color = $('#player-color').val();
+    toggleButtonSpinner('reset-button', true);
     $.ajax({
         url: '/move',
         type: 'POST',
@@ -267,11 +500,16 @@ function resetGame() {
         success: function(response) {
             console.log("Reset response:", response);
             playerColor = response.player_color;
+            currentGameId = response.game_id;
             board = Chessboard('board', {
-                draggable: true,
+                draggable: !useTapToMove,
                 position: response.fen,
                 onDrop: onDrop,
                 onSnapEnd: onSnapEnd,
+                onDragStart: onDragStart,
+                onMouseoverSquare: onMouseoverSquare,
+                onMouseoutSquare: onMouseoutSquare,
+                onSquareClick: onSquareClick,
                 pieceTheme: '/static/img/chesspieces/wikipedia/{piece}.png',
                 orientation: playerColor.toLowerCase()
             });
@@ -281,6 +519,156 @@ function resetGame() {
             updateStatus();
             $('#hint').addClass('hidden');
             clearHintArrow();
+            showToast("Game reset successfully", "success");
+        },
+        error: function(xhr, status, error) {
+            console.error("Reset failed:", status, error);
+            if (xhr.status === 401) {
+                window.location.href = '/login';
+            } else {
+                showToast("Failed to reset game", "error");
+            }
+        },
+        complete: function() {
+            toggleButtonSpinner('reset-button', false);
+        }
+    });
+}
+
+function saveGame() {
+    toggleButtonSpinner('save-button', true);
+    $.ajax({
+        url: '/save_game',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({}),
+        success: function(response) {
+            console.log("Save game response:", response);
+            currentGameId = response.game_id;
+            showToast(`Game saved! Game ID: ${currentGameId}`, "success");
+        },
+        error: function(xhr, status, error) {
+            console.error("Failed to save game:", status, error);
+            if (xhr.status === 401) {
+                window.location.href = '/login';
+            } else {
+                showToast("Failed to save game", "error");
+            }
+        },
+        complete: function() {
+            toggleButtonSpinner('save-button', false);
+        }
+    });
+}
+
+function showResumeModal() {
+    toggleButtonSpinner('resume-button', true);
+    $.ajax({
+        url: '/user_games',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({}),
+        success: function(response) {
+            console.log("User games response:", response);
+            const $gameList = $('#game-list');
+            $gameList.empty();
+            if (response.games.length === 0) {
+                $gameList.append('<option>No saved games found</option>');
+            } else {
+                response.games.forEach(game => {
+                    $gameList.append(`<option value="${game.game_id}">[${game.game_id}] Created: ${game.created_at}, Last Updated: ${game.updated_at}</option>`);
+                });
+            }
+            $('#resume-modal').removeClass('hidden');
+        },
+        error: function(xhr, status, error) {
+            console.error("Failed to fetch user games:", status, error);
+            if (xhr.status === 401) {
+                window.location.href = '/login';
+            } else {
+                showToast("Failed to fetch saved games", "error");
+            }
+        },
+        complete: function() {
+            toggleButtonSpinner('resume-button', false);
+        }
+    });
+}
+
+function resumeGame() {
+    const gameId = $('#game-list').val();
+    if (!gameId || $('#game-list option').length === 0) {
+        showToast("Please select a game to resume", "error");
+        return;
+    }
+    toggleButtonSpinner('load-game-button', true);
+    $.ajax({
+        url: '/resume_game',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ game_id: gameId }),
+        success: function(response) {
+            console.log("Resume game response:", response);
+            if (response.error) {
+                showToast("Failed to resume game: " + response.error, "error");
+            } else {
+                playerColor = response.player_color;
+                currentGameId = response.game_id;
+                board = Chessboard('board', {
+                    draggable: !useTapToMove,
+                    position: response.fen,
+                    onDrop: onDrop,
+                    onSnapEnd: onSnapEnd,
+                    onDragStart: onDragStart,
+                    onMouseoverSquare: onMouseoverSquare,
+                    onMouseoutSquare: onMouseoutSquare,
+                    onSquareClick: onSquareClick,
+                    pieceTheme: '/static/img/chesspieces/wikipedia/{piece}.png',
+                    orientation: playerColor.toLowerCase()
+                });
+                game.load(response.fen);
+                updateProbability(response.probability);
+                updateHistory(response.history);
+                updateStatus();
+                $('#hint').addClass('hidden');
+                clearHintArrow();
+                $('#resume-modal').addClass('hidden');
+                showToast("Game resumed successfully", "success");
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error("Failed to resume game:", status, error);
+            if (xhr.status === 401) {
+                window.location.href = '/login';
+            } else {
+                showToast("Failed to resume game", "error");
+            }
+        },
+        complete: function() {
+            toggleButtonSpinner('load-game-button', false);
+        }
+    });
+}
+
+function logout() {
+    $.ajax({
+        url: '/logout',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({}),
+        success: function(response) {
+            console.log("Logout response:", response);
+            localStorage.removeItem('username');
+            username = null;
+            $('#username-display').text('');
+            $('#logout-button').addClass('hidden');
+            $('#game-container').addClass('hidden');
+            window.location.href = '/login';
+            showToast("Logged out successfully", "success");
+        },
+        error: function(xhr, status, error) {
+            console.error("Logout failed:", status, error);
+            showToast("Failed to logout", "error");
         }
     });
 }
