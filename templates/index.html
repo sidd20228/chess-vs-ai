@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +23,23 @@
                             '0%': { opacity: '0' },
                             '100%': { opacity: '1' },
                         }
-                    }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'mono': ['Roboto Mono', 'monospace'],
+                    },
                 }
             }
         }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-green-50 to-blue-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 min-h-screen flex items-center justify-center p-4 transition-colors duration-300">
+<body class="bg-gradient-to-br from-green-50 to-blue-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 min-h-screen flex items-center justify-center p-4 transition-colors duration-300 font-sans">
     <div class="bg-white dark:bg-gray-800 shadow-xl rounded-3xl p-8 max-w-4xl w-full md:p-6 sm:p-4 animate-fade-in transition-colors duration-300">
         <div class="flex justify-between items-center mb-8">
-            <h1 class="text-5xl font-extrabold text-gray-800 dark:text-gray-100 text-center">Chess vs AI (Stockfish)</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 text-center tracking-tight">Chess vs AI (Stockfish)</h1>
             <button id="dark-mode-toggle" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path id="sun" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -42,37 +49,37 @@
         </div>
         
         <!-- Chessboard -->
-        <div id="board" class="mx-auto rounded-xl shadow-lg" style="width: 400px;"></div>
+        <div id="board" class="mx-auto rounded-2xl shadow-md transition-shadow duration-300 hover:shadow-lg w-full max-w-[400px]"></div>
         
         <!-- Status -->
-        <div id="status" class="text-lg text-gray-600 dark:text-gray-300 text-center mt-4"></div>
+        <div id="status" class="text-lg text-gray-600 dark:text-gray-300 text-center mt-4 font-medium"></div>
         
         <!-- Probability Bar -->
         <div class="mt-6">
-            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-5 overflow-hidden">
-                <div class="probability-fill h-full bg-gradient-to-r from-red-500 to-indigo-500 transition-all duration-500" style="width: 50%;"></div>
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-6 overflow-hidden">
+                <div class="probability-fill h-full bg-gradient-to-r from-green-400 to-blue-500 dark:from-green-500 dark:to-indigo-600 transition-all duration-500" style="width: 50%;"></div>
             </div>
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Win Probability: <span id="probability" class="font-semibold">50%</span></p>
         </div>
         
         <!-- Move History -->
-        <div class="mt-6 bg-gray-50 dark:bg-gray-900 rounded-2xl p-4 max-h-64 overflow-y-auto transition-colors duration-300">
-            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">Move History</h3>
-            <ul id="move-history" class="text-gray-600 dark:text-gray-300 text-sm divide-y divide-gray-200 dark:divide-gray-700"></ul>
+        <div class="mt-6 bg-gray-50 dark:bg-gray-900 rounded-3xl p-4 max-h-64 overflow-y-auto transition-colors duration-300">
+            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-3">Move History</h3>
+            <ul id="move-history" class="text-gray-600 dark:text-gray-300 text-sm divide-y divide-gray-200 dark:divide-gray-700 font-mono"></ul>
         </div>
         
         <!-- Controls -->
         <div class="mt-6 flex justify-center gap-4 flex-wrap">
-            <select id="difficulty" class="bg-indigo-500 text-white font-semibold py-2 px-4 rounded-2xl hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors">
+            <select id="difficulty" class="bg-gradient-to-br from-purple-500 to-indigo-500 text-white font-semibold py-2 px-4 rounded-3xl hover:from-purple-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-colors shadow-md">
                 <option value="Easy">Easy</option>
                 <option value="Medium" selected>Medium</option>
                 <option value="Hard">Hard</option>
             </select>
-            <select id="player-color" class="bg-indigo-500 text-white font-semibold py-2 px-4 rounded-2xl hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors">
+            <select id="player-color" class="bg-gradient-to-br from-purple-500 to-indigo-500 text-white font-semibold py-2 px-4 rounded-3xl hover:from-purple-600 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-colors shadow-md">
                 <option value="White" selected>Play as White</option>
                 <option value="Black">Play as Black</option>
             </select>
-            <button onclick="resetGame()" class="bg-red-500 text-white font-semibold py-2 px-6 rounded-2xl hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 transition-colors">Reset Game</button>
+            <button onclick="resetGame()" class="bg-red-500 text-white font-semibold py-2 px-6 rounded-3xl hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 transition-colors shadow-md">Reset Game</button>
         </div>
     </div>
 </body>
