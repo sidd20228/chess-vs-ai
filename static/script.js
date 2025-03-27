@@ -78,6 +78,10 @@ function onDragStart(source, piece, position, orientation) {
         console.log("Not your turn! Player color:", playerColor, "Game turn:", game.turn());
         return false;
     }
+    if (game.game_over()) {
+        console.log("Game is over, cannot drag pieces!");
+        return false;
+    }
     if ((playerColor === 'White' && piece.search(/^b/) !== -1) ||
         (playerColor === 'Black' && piece.search(/^w/) !== -1)) {
         console.log("Cannot drag opponent's piece!");
@@ -108,6 +112,13 @@ function onSquareClick(square) {
     console.log("Current useTapToMove state:", useTapToMove);
     if (!useTapToMove) {
         console.log("Tap-to-move is disabled, skipping onSquareClick logic");
+        return;
+    }
+
+    if (game.game_over()) {
+        console.log("Game is over, cannot make moves!");
+        selectedSquare = null;
+        $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
         return;
     }
 
@@ -224,12 +235,17 @@ function clearHintArrow() {
 }
 
 function showToast(message, type = 'success') {
+    const background = type === 'success'
+        ? "linear-gradient(to right, #00b09b, #96c93d)"
+        : type === 'error'
+        ? "linear-gradient(to right, #ff5f6d, #ffc371)"
+        : "linear-gradient(to right, #2196F3, #21CBF3)";
     Toastify({
         text: message,
         duration: 3000,
         gravity: "top",
         position: "right",
-        backgroundColor: type === 'success' ? "#10b981" : "#ef4444",
+        backgroundColor: background,
         stopOnFocus: true,
     }).showToast();
 }
@@ -395,6 +411,11 @@ function onDrop(source, target, piece, newPos, oldPos, orientation) {
         return 'snapback';
     }
 
+    if (game.game_over()) {
+        console.log("Game is over, cannot make moves!");
+        return 'snapback';
+    }
+
     const pieceOnSquare = game.get(source);
     const isPawn = pieceOnSquare && pieceOnSquare.type === 'p';
     const isPromotion = isPawn && (
@@ -420,11 +441,12 @@ function onDrop(source, target, piece, newPos, oldPos, orientation) {
 
 function makeServerMove(moveString) {
     console.log("Making server move:", moveString);
+    toggleButtonSpinner('reset-button', true);
     $.ajax({
         url: '/move',
         type: 'POST',
         contentType: 'application/json',
-        data: JSON.stringify({ move: moveString }),
+        data: JSON.stringify({ move: moveString, difficulty: $('#difficulty').val(), player_color: playerColor }),
         success: function(response) {
             console.log("Move response:", response);
             if (response.error) {
@@ -438,10 +460,41 @@ function makeServerMove(moveString) {
                 board.orientation(playerColor.toLowerCase());
                 board.position(response.fen);
                 game.load(response.fen);
-                updateProbability(response.probability);
+                // Update probability if the game is not over
+                if (!response.result) {
+                    updateProbability(response.probability);
+                }
                 updateHistory(response.history);
+                // Handle game over
                 if (response.result) {
-                    $('#status').text(`Game Over: ${response.result}`);
+                    let resultMessage;
+                    if (
+                        (response.result === "1-0" && playerColor === "White") ||
+                        (response.result === "0-1" && playerColor === "Black")
+                    ) {
+                        resultMessage = "You win!";
+                    } else if (response.result === "1/2-1/2") {
+                        resultMessage = "Draw!";
+                    } else {
+                        resultMessage = "You lose!";
+                    }
+                    $('#probability').text(resultMessage);
+                    $('.probability-fill').css('width', '0%');
+                    showToast(resultMessage, "info");
+                    // Disable further moves
+                    board = Chessboard('board', {
+                        draggable: !useTapToMove,
+                        position: game.fen(),
+                        onDrop: onDrop,
+                        onSnapEnd: onSnapEnd,
+                        onDragStart: onDragStart,
+                        onMouseoverSquare: onMouseoverSquare,
+                        onMouseoutSquare: onMouseoutSquare,
+                        onSquareClick: onSquareClick,
+                        pieceTheme: '/static/img/chesspieces/wikipedia/{piece}.png',
+                        orientation: playerColor.toLowerCase()
+                    });
+                    $('#hint-button').prop('disabled', true);
                 }
             }
             updateStatus();
@@ -457,6 +510,9 @@ function makeServerMove(moveString) {
                 board.position(game.fen());
                 showToast("Failed to make move", "error");
             }
+        },
+        complete: function() {
+            toggleButtonSpinner('reset-button', false);
         }
     });
 }
@@ -466,26 +522,49 @@ function onSnapEnd() {
 }
 
 function updateStatus() {
-    let status = game.turn() === 'w' ? 'White to move' : 'Black to move';
-    if (game.in_checkmate()) status = 'Checkmate';
-    else if (game.in_draw()) status = 'Draw';
-    $('#status').text(status);
+    if (game.game_over()) {
+        if (game.in_checkmate()) {
+            const winner = game.turn() === 'w' ? 'Black' : 'White';
+            $('#status').text(`Checkmate! ${winner} wins!`);
+        } else if (game.in_draw()) {
+            $('#status').text('Draw!');
+        } else if (game.in_stalemate()) {
+            $('#status').text('Stalemate!');
+        } else if (game.in_threefold_repetition()) {
+            $('#status').text('Draw by threefold repetition!');
+        } else if (game.insufficient_material()) {
+            $('#status').text('Draw by insufficient material!');
+        }
+    } else if (game.in_check()) {
+        $('#status').text('Check!');
+    } else {
+        const isPlayerTurn = (playerColor === 'White' && game.turn() === 'w') || (playerColor === 'Black' && game.turn() === 'b');
+        $('#status').text(isPlayerTurn ? 'Your turn' : 'AI\'s turn');
+    }
 }
 
 function updateProbability(probability) {
     console.log("Updating probability:", probability);
     $('.probability-fill').css('width', `${probability}%`);
-    $('#probability').text(`${Math.round(probability)}%`);
+    $('#probability').text(`Win Probability: ${Math.round(probability)}%`);
 }
 
 function updateHistory(history) {
     const $historyList = $('#move-history');
     $historyList.empty();
-    history.forEach((move, index) => {
-        const moveNum = Math.floor(index / 2) + 1;
-        const color = index % 2 === 0 ? 'White' : 'Black';
-        $historyList.append(`<li class="py-2">${moveNum}. ${color}: ${move}</li>`);
-    });
+    for (let i = 0; i < history.length; i += 2) {
+        const moveNumber = Math.floor(i / 2) + 1;
+        const whiteMove = history[i];
+        const blackMove = history[i + 1] || "";
+        $historyList.append(
+            `<li class="flex space-x-2 py-1">
+                <span class="w-8 font-semibold">${moveNumber}.</span>
+                <span class="flex-1">${whiteMove}</span>
+                <span class="flex-1">${blackMove}</span>
+            </li>`
+        );
+    }
+    $historyList.scrollTop($historyList[0].scrollHeight);
 }
 
 function resetGame() {
@@ -519,6 +598,7 @@ function resetGame() {
             updateStatus();
             $('#hint').addClass('hidden');
             clearHintArrow();
+            $('#hint-button').prop('disabled', false);
             showToast("Game reset successfully", "success");
         },
         error: function(xhr, status, error) {
@@ -574,10 +654,12 @@ function showResumeModal() {
             $gameList.empty();
             if (response.games.length === 0) {
                 $gameList.append('<option>No saved games found</option>');
+                $('#load-game-button').prop('disabled', true);
             } else {
                 response.games.forEach(game => {
                     $gameList.append(`<option value="${game.game_id}">[${game.game_id}] Created: ${game.created_at}, Last Updated: ${game.updated_at}</option>`);
                 });
+                $('#load-game-button').prop('disabled', false);
             }
             $('#resume-modal').removeClass('hidden');
         },
@@ -597,7 +679,7 @@ function showResumeModal() {
 
 function resumeGame() {
     const gameId = $('#game-list').val();
-    if (!gameId || $('#game-list option').length === 0) {
+    if (!gameId || $('#game-list option').length === 0 || $('#game-list option:first').text() === 'No saved games found') {
         showToast("Please select a game to resume", "error");
         return;
     }
@@ -633,6 +715,7 @@ function resumeGame() {
                 $('#hint').addClass('hidden');
                 clearHintArrow();
                 $('#resume-modal').addClass('hidden');
+                $('#hint-button').prop('disabled', false);
                 showToast("Game resumed successfully", "success");
             }
         },
