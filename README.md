@@ -8,7 +8,26 @@ A web-based chess game where you can play against Stockfish AI. Features difficu
 4. Open `http://127.0.0.1:5000` in your browser.
 
 ## Features
-- Play as White or Black
-- Adjustable AI difficulty
-- Move history display
-- Dark mode toggle
+- Play as White or Black against Stockfish AI engine
+- Adjustable AI difficulty levels (Easy, Medium, Hard)
+- Interactive board with drag-and-drop or tap-to-move options
+- Real-time move history display with algebraic notation
+- Dark/Light mode toggle for better visibility
+- Win probability indicator
+- Hint system to suggest best moves
+- Save and resume games
+- User authentication system
+- Mobile-responsive design
+- Visual move highlighting and hints
+- Game state indicators (Check, Checkmate, Draw, etc.)
+- Automatic game saving on browser close
+
+## Technologies Used
+- Python/Flask backend
+- JavaScript/jQuery frontend 
+- Stockfish chess engine
+- Chess.js for game logic
+- Chessboard.js for board UI
+- SQLite database for game storage
+- Tailwind CSS for styling
+
