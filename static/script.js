@@ -7,6 +7,11 @@ let username = localStorage.getItem('username') || null;
 let selectedSquare = null;
 let useTapToMove = /Mobi|Android/i.test(navigator.userAgent); // Default to tap-to-move on mobile
 
+// --- Sound setup ---
+const moveSound = new Audio('/static/move.wav');
+const captureSound = new Audio('/static/capture.wav');
+const checkSound = new Audio('/static/check.wav');
+
 function initializeBoard() {
     if (typeof Chessboard === 'undefined') {
         console.error("Chessboard.js not loaded!");
@@ -38,18 +43,25 @@ function initializeBoard() {
     $board.on('touchmove', function(e) {
         console.log("Touchmove on board:", e.originalEvent.touches[0]);
     });
-    $board.on('touchend', function(e) {
-        console.log("Touchend on board:", e.originalEvent.changedTouches[0]);
-        const touch = e.originalEvent.changedTouches[0];
-        const squareElement = document.elementFromPoint(touch.clientX, touch.clientY);
-        if (squareElement && squareElement.classList.contains('square-55d63')) {
-            const squareClasses = squareElement.className.split(' ');
-            const squareClass = squareClasses.find(cls => cls.startsWith('square-'));
-            if (squareClass) {
-                const square = squareClass.replace('square-', '');
-                console.log("Detected touch on square:", square);
-                onSquareClick(square);
-            }
+
+    // Desktop: Click handler for tap-to-move
+    $board.on('click', '.square-55d63', function() {
+        const classes = $(this).attr('class').split(' ');
+        const squareClass = classes.find(cls => cls.startsWith('square-') && cls !== 'square-55d63');
+        if (squareClass) {
+            const square = squareClass.replace('square-', '');
+            onSquareClick(square);
+        }
+    });
+
+    // Mobile: Touchend handler for tap-to-move
+    $board.on('touchend', '.square-55d63', function(e) {
+        e.preventDefault();
+        const classes = $(this).attr('class').split(' ');
+        const squareClass = classes.find(cls => cls.startsWith('square-') && cls !== 'square-55d63');
+        if (squareClass) {
+            const square = squareClass.replace('square-', '');
+            onSquareClick(square);
         }
     });
 
@@ -114,17 +126,14 @@ function onSquareClick(square) {
         console.log("Tap-to-move is disabled, skipping onSquareClick logic");
         return;
     }
-
     if (game.game_over()) {
         console.log("Game is over, cannot make moves!");
         selectedSquare = null;
         $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
         return;
     }
-
     const piece = game.get(square);
     console.log("Piece on square:", piece);
-
     if (selectedSquare) {
         console.log("Selected square exists:", selectedSquare, "Attempting move to:", square);
         const move = {
@@ -132,7 +141,6 @@ function onSquareClick(square) {
             to: square,
             promotion: 'q'
         };
-
         const isPlayerTurn = (playerColor === 'White' && game.turn() === 'w') || (playerColor === 'Black' && game.turn() === 'b');
         console.log("Is player's turn?", isPlayerTurn, "Player color:", playerColor, "Game turn:", game.turn());
         if (!isPlayerTurn) {
@@ -141,7 +149,6 @@ function onSquareClick(square) {
             $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
             return;
         }
-
         const pieceOnSquare = game.get(selectedSquare);
         console.log("Piece on selected square:", pieceOnSquare);
         const isPawn = pieceOnSquare && pieceOnSquare.type === 'p';
@@ -150,7 +157,6 @@ function onSquareClick(square) {
             (pieceOnSquare.color === 'b' && square.charAt(1) === '1')
         );
         console.log("Is this a promotion move?", isPromotion);
-
         if (isPromotion) {
             console.log("Pawn promotion detected:", selectedSquare, square);
             pendingMove = { source: selectedSquare, target: square };
@@ -159,7 +165,6 @@ function onSquareClick(square) {
             $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
             return;
         }
-
         console.log("Current FEN before move:", game.fen());
         const validMove = game.move(move);
         console.log("Move result:", validMove);
@@ -169,14 +174,20 @@ function onSquareClick(square) {
             $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
             return;
         }
-
+        // Play sound
+        if (game.in_check()) {
+            checkSound.play();
+        } else if (validMove.captured) {
+            captureSound.play();
+        } else {
+            moveSound.play();
+        }
         console.log("Move is valid, sending to server:", selectedSquare + square);
         makeServerMove(selectedSquare + square);
         selectedSquare = null;
         $(`#board .square-55d63`).removeClass('highlight-selected highlight-move');
         return;
     }
-
     if (piece && (
         (playerColor === 'White' && piece.color === 'w') ||
         (playerColor === 'Black' && piece.color === 'b')
@@ -404,38 +415,40 @@ function onDrop(source, target, piece, newPos, oldPos, orientation) {
         to: target,
         promotion: 'q'
     };
-
     const isPlayerTurn = (playerColor === 'White' && game.turn() === 'w') || (playerColor === 'Black' && game.turn() === 'b');
     if (!isPlayerTurn) {
         console.log("Not your turn!");
         return 'snapback';
     }
-
     if (game.game_over()) {
         console.log("Game is over, cannot make moves!");
         return 'snapback';
     }
-
     const pieceOnSquare = game.get(source);
     const isPawn = pieceOnSquare && pieceOnSquare.type === 'p';
     const isPromotion = isPawn && (
         (pieceOnSquare.color === 'w' && target.charAt(1) === '8') ||
         (pieceOnSquare.color === 'b' && target.charAt(1) === '1')
     );
-
     if (isPromotion) {
         console.log("Pawn promotion detected:", source, target);
         pendingMove = { source, target };
         $('#promotion-modal').removeClass('hidden');
         return;
     }
-
     const validMove = game.move(move);
     if (validMove === null) {
         console.log("Invalid move:", source, target);
         return 'snapback';
     }
-
+    // Play sound
+    if (game.in_check()) {
+        checkSound.play();
+    } else if (validMove.captured) {
+        captureSound.play();
+    } else {
+        moveSound.play();
+    }
     makeServerMove(source + target);
 }
 

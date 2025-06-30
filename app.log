@@ -1726,3 +1726,2876 @@ Loaded game from database: game_id=49, user_id=3
 Stockfish initialized from ./stockfish.exe
 Stockfish engine closed
 Retrieved 23 games for user_id=3
+User logged in: username=sidd2084
+Saved game to database: game_id=50, user_id=3
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: f1e2, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPPBPPP/RNBQK1NR b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/8/PPPPBPPP/RNBQK1NR w KQkq - 2 3
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/8/PPPPBPPP/RNBQK1NR w KQkq - 2 3
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPPBPPP/RNBQK2R b KQkq - 3 3
+AI moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/2p5/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 4 4
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/2p5/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 4 4
+Hint for White (direct): b1c3
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: b1c3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/2p5/4P3/2N2N2/PPPPBPPP/R1BQK2R b KQkq - 5 4
+AI moved: e7e5, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n2n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQK2R w KQkq - 0 5
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n2n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQK2R w KQkq - 0 5
+Hint for White (direct): e1g1
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: e1g1, turn=Black, FEN=r1bqkb1r/pp1p1ppp/2n2n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQ1RK1 b kq - 1 5
+AI moved: f8e7, turn=White, FEN=r1bqk2r/pp1pbppp/2n2n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQ1RK1 w kq - 2 6
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/pp1pbppp/2n2n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQ1RK1 w kq - 2 6
+Hint for White (direct): f1e1
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: f1e1, turn=Black, FEN=r1bqk2r/pp1pbppp/2n2n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQR1K1 b kq - 3 6
+AI moved: d7d6, turn=White, FEN=r1bqk2r/pp2bppp/2np1n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQR1K1 w kq - 0 7
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/pp2bppp/2np1n2/2p1p3/4P3/2N2N2/PPPPBPPP/R1BQR1K1 w kq - 0 7
+Hint for White (direct): e2c4
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: e2c4, turn=Black, FEN=r1bqk2r/pp2bppp/2np1n2/2p1p3/2B1P3/2N2N2/PPPP1PPP/R1BQR1K1 b kq - 1 7
+AI moved: c8g4, turn=White, FEN=r2qk2r/pp2bppp/2np1n2/2p1p3/2B1P1b1/2N2N2/PPPP1PPP/R1BQR1K1 w kq - 2 8
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2qk2r/pp2bppp/2np1n2/2p1p3/2B1P1b1/2N2N2/PPPP1PPP/R1BQR1K1 w kq - 2 8
+Hint for White (direct): h2h3
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: h2h3, turn=Black, FEN=r2qk2r/pp2bppp/2np1n2/2p1p3/2B1P1b1/2N2N1P/PPPP1PP1/R1BQR1K1 b kq - 0 8
+AI moved: g4d7, turn=White, FEN=r2qk2r/pp1bbppp/2np1n2/2p1p3/2B1P3/2N2N1P/PPPP1PP1/R1BQR1K1 w kq - 1 9
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2qk2r/pp1bbppp/2np1n2/2p1p3/2B1P3/2N2N1P/PPPP1PP1/R1BQR1K1 w kq - 1 9
+Hint for White (direct): a2a4
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: a2a4, turn=Black, FEN=r2qk2r/pp1bbppp/2np1n2/2p1p3/P1B1P3/2N2N1P/1PPP1PP1/R1BQR1K1 b kq - 0 9
+AI moved: e8g8, turn=White, FEN=r2q1rk1/pp1bbppp/2np1n2/2p1p3/P1B1P3/2N2N1P/1PPP1PP1/R1BQR1K1 w - - 1 10
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Saved game to database: game_id=50, user_id=3
+Cleaned up old games
+Retrieved 24 games for user_id=3
+Loaded game from database: game_id=50, user_id=3
+Loaded game from database: game_id=48, user_id=3
+Saved game to database: game_id=48, user_id=3
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=48, user_id=3
+Saved game to database: game_id=48, user_id=3
+User logged out: user_id=3
+User registered and logged in: username=Testing_user, user_id=6
+Saved game to database: game_id=51, user_id=6
+Loaded game from database: game_id=51, user_id=6
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 1 games for user_id=6
+Loaded game from database: game_id=51, user_id=6
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Hard (Skill Level: 20)
+Reset: player_color=Black, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+AI (White) moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Saved game to database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+Cleaned up old games
+Stockfish engine closed
+Retrieved 2 games for user_id=6
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Hint for Black (direct): c7c5
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Player moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+AI moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+Saved game to database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+Hint for Black (direct): b8c6
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Player moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+AI moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+Saved game to database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Loaded game from database: game_id=52, user_id=6
+Loaded game from database: game_id=52, user_id=6
+Loaded game from database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+User logged out: user_id=6
+Saved game to database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+User logged out: user_id=6
+User logged out: user_id=6
+Loaded game from database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+User logged out: user_id=6
+Loaded game from database: game_id=49, user_id=3
+Loaded game from database: game_id=49, user_id=3
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=49, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Hint for White (direct): e2e4
+Stockfish engine closed
+Loaded game from database: game_id=49, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=49, user_id=3
+Saved game to database: game_id=49, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=49, user_id=3
+Saved game to database: game_id=49, user_id=3
+User logged out: user_id=3
+Registration failed: Username already exists: Testing_user
+Failed login attempt: username=Testing_user
+Failed login attempt: username=Testing_user
+User registered and logged in: username=Testing_user1, user_id=7
+Saved game to database: game_id=53, user_id=7
+Loaded game from database: game_id=53, user_id=7
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=53, user_id=7
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=53, user_id=7
+Saved game to database: game_id=53, user_id=7
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=53, user_id=7
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=53, user_id=7
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Saved game to database: game_id=53, user_id=7
+Saved game to database: game_id=53, user_id=7
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=53, user_id=7
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Hint for White (direct): d2d4
+Stockfish engine closed
+Loaded game from database: game_id=53, user_id=7
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+AI moved: c5d4, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=53, user_id=7
+Saved game to database: game_id=53, user_id=7
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=53, user_id=7
+Saved game to database: game_id=53, user_id=7
+User logged out: user_id=7
+User logged in: username=Testing_user1
+Saved game to database: game_id=54, user_id=7
+Loaded game from database: game_id=54, user_id=7
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=54, user_id=7
+Saved game to database: game_id=54, user_id=7
+User logged out: user_id=7
+User logged in: username=Testing_user
+Saved game to database: game_id=55, user_id=6
+Loaded game from database: game_id=55, user_id=6
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 3 games for user_id=6
+Loaded game from database: game_id=55, user_id=6
+Loaded game from database: game_id=51, user_id=6
+Saved game to database: game_id=51, user_id=6
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 3 games for user_id=6
+Loaded game from database: game_id=51, user_id=6
+Loaded game from database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+Hint for Black (direct): c5d4
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Player moved: c5d4, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+AI moved: f3d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+Saved game to database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+Cleaned up old games
+Stockfish engine closed
+Retrieved 3 games for user_id=6
+Retrieved 3 games for user_id=6
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+Hint for Black (direct): g8f6
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Player moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+AI moved: b1c3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5
+Saved game to database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Loaded game from database: game_id=52, user_id=6
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=52, user_id=6
+Saved game to database: game_id=52, user_id=6
+User logged out: user_id=6
+User registered and logged in: username=mayank_12, user_id=8
+Saved game to database: game_id=56, user_id=8
+Loaded game from database: game_id=56, user_id=8
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=56, user_id=8
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=Black, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+AI (White) moved: e2e3, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Saved game to database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=57, user_id=8
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Hint for Black (direct): g8f6
+Stockfish engine closed
+Loaded game from database: game_id=57, user_id=8
+Stockfish initialized from ./stockfish.exe
+Player moved: g8f6, turn=White, FEN=rnbqkb1r/pppppppp/5n2/8/8/4P3/PPPP1PPP/RNBQKBNR w KQkq - 1 2
+AI moved: g1f3, turn=Black, FEN=rnbqkb1r/pppppppp/5n2/8/8/4PN2/PPPP1PPP/RNBQKB1R b KQkq - 2 2
+Saved game to database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=57, user_id=8
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkb1r/pppppppp/5n2/8/8/4PN2/PPPP1PPP/RNBQKB1R b KQkq - 2 2
+Hint for Black (direct): d7d5
+Stockfish engine closed
+Loaded game from database: game_id=57, user_id=8
+Stockfish initialized from ./stockfish.exe
+Player moved: d7d5, turn=White, FEN=rnbqkb1r/ppp1pppp/5n2/3p4/8/4PN2/PPPP1PPP/RNBQKB1R w KQkq - 0 3
+AI moved: c2c4, turn=Black, FEN=rnbqkb1r/ppp1pppp/5n2/3p4/2P5/4PN2/PP1P1PPP/RNBQKB1R b KQkq - 0 3
+Saved game to database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+Cleaned up old games
+Loaded game from database: game_id=57, user_id=8
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=Black, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+AI (White) moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Saved game to database: game_id=58, user_id=8
+Saved game to database: game_id=58, user_id=8
+Cleaned up old games
+Stockfish engine closed
+Retrieved 3 games for user_id=8
+Loaded game from database: game_id=58, user_id=8
+Loaded game from database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=57, user_id=8
+Saved game to database: game_id=57, user_id=8
+User logged out: user_id=8
+User logged in: username=sidd2084
+Saved game to database: game_id=59, user_id=3
+Loaded game from database: game_id=59, user_id=3
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=59, user_id=3
+Saved game to database: game_id=59, user_id=3
+User logged out: user_id=3
+User logged in: username=sidd2015
+Saved game to database: game_id=60, user_id=4
+Loaded game from database: game_id=60, user_id=4
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 12 games for user_id=4
+Loaded game from database: game_id=60, user_id=4
+Loaded game from database: game_id=37, user_id=4
+Saved game to database: game_id=37, user_id=4
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=37, user_id=4
+Saved game to database: game_id=37, user_id=4
+User logged out: user_id=4
+User logged in: username=sidd2084
+Saved game to database: game_id=61, user_id=3
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Hint for White (direct): e2e4
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=61, user_id=3
+Saved game to database: game_id=61, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: d7d6, turn=White, FEN=rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3
+Saved game to database: game_id=61, user_id=3
+Saved game to database: game_id=61, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3
+Hint for White (direct): d2d4
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=rnbqkbnr/pp2pppp/3p4/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+AI moved: c5d4, turn=White, FEN=rnbqkbnr/pp2pppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=61, user_id=3
+Saved game to database: game_id=61, user_id=3
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=61, user_id=3
+Saved game to database: game_id=61, user_id=3
+User logged out: user_id=3
+User registered and logged in: username=Vatsal_12, user_id=9
+Saved game to database: game_id=62, user_id=9
+Loaded game from database: game_id=62, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=62, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=Black, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+AI (White) moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Saved game to database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=63, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Hint for Black (direct): c7c5
+Stockfish engine closed
+Loaded game from database: game_id=63, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+AI moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+Saved game to database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=63, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+Hint for Black (direct): b8c6
+Stockfish engine closed
+Loaded game from database: game_id=63, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+AI moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+Saved game to database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+Cleaned up old games
+Loaded game from database: game_id=63, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=Black, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+AI (White) moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Saved game to database: game_id=64, user_id=9
+Saved game to database: game_id=64, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Retrieved 3 games for user_id=9
+Loaded game from database: game_id=64, user_id=9
+Loaded game from database: game_id=62, user_id=9
+Saved game to database: game_id=62, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 3 games for user_id=9
+Loaded game from database: game_id=62, user_id=9
+Loaded game from database: game_id=64, user_id=9
+Saved game to database: game_id=64, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 3 games for user_id=9
+Loaded game from database: game_id=64, user_id=9
+Loaded game from database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=63, user_id=9
+Saved game to database: game_id=63, user_id=9
+User logged out: user_id=9
+User registered and logged in: username=choti elaichi, user_id=10
+Saved game to database: game_id=65, user_id=10
+Loaded game from database: game_id=65, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=65, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Easy (Skill Level: 5)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d1e2, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPPQPPP/RNB1KBNR b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/8/PPPPQPPP/RNB1KBNR w KQkq - 2 3
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2f3, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5Q2/PPPP1PPP/RNB1KBNR b KQkq - 3 3
+AI moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/2p5/4P3/5Q2/PPPP1PPP/RNB1KBNR w KQkq - 4 4
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f3g4, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/2p5/4P1Q1/8/PPPP1PPP/RNB1KBNR b KQkq - 5 4
+AI moved: f6g4, turn=White, FEN=r1bqkb1r/pp1ppppp/2n5/2p5/4P1n1/8/PPPP1PPP/RNB1KBNR w KQkq - 0 5
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppppp/2n5/2p5/4P1n1/8/PPPP1PPP/RNB1KBNR w KQkq - 0 5
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n5/2p5/4P1n1/5N2/PPPP1PPP/RNB1KB1R b KQkq - 1 5
+AI moved: e7e6, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p5/4P1n1/5N2/PPPP1PPP/RNB1KB1R w KQkq - 0 6
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p5/4P1n1/5N2/PPPP1PPP/RNB1KB1R w KQkq - 0 6
+Hint for White (direct): h2h3
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h2h3, turn=Black, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p5/4P1n1/5N1P/PPPP1PP1/RNB1KB1R b KQkq - 0 6
+AI moved: g4e5, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p1n3/4P3/5N1P/PPPP1PP1/RNB1KB1R w KQkq - 1 7
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p1n3/4P3/5N1P/PPPP1PP1/RNB1KB1R w KQkq - 1 7
+Hint for White (direct): f3e5
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f3e5, turn=Black, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p1N3/4P3/7P/PPPP1PP1/RNB1KB1R b KQkq - 0 7
+AI moved: c6e5, turn=White, FEN=r1bqkb1r/pp1p1ppp/4p3/2p1n3/4P3/7P/PPPP1PP1/RNB1KB1R w KQkq - 0 8
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/4p3/2p1n3/4P3/7P/PPPP1PP1/RNB1KB1R w KQkq - 0 8
+Hint for White (direct): b2b3
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b2b3, turn=Black, FEN=r1bqkb1r/pp1p1ppp/4p3/2p1n3/4P3/1P5P/P1PP1PP1/RNB1KB1R b KQkq - 0 8
+AI moved: e5c6, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p5/4P3/1P5P/P1PP1PP1/RNB1KB1R w KQkq - 1 9
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h1h2, turn=Black, FEN=r1bqkb1r/pp1p1ppp/2n1p3/2p5/4P3/1P5P/P1PP1PPR/RNB1KB2 b Qkq - 2 9
+AI moved: c6b4, turn=White, FEN=r1bqkb1r/pp1p1ppp/4p3/2p5/1n2P3/1P5P/P1PP1PPR/RNB1KB2 w Qkq - 3 10
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/4p3/2p5/1n2P3/1P5P/P1PP1PPR/RNB1KB2 w Qkq - 3 10
+Hint for White (direct): b1a3
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b1a3, turn=Black, FEN=r1bqkb1r/pp1p1ppp/4p3/2p5/1n2P3/NP5P/P1PP1PPR/R1B1KB2 b Qkq - 4 10
+AI moved: a7a6, turn=White, FEN=r1bqkb1r/1p1p1ppp/p3p3/2p5/1n2P3/NP5P/P1PP1PPR/R1B1KB2 w Qkq - 0 11
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/1p1p1ppp/p3p3/2p5/1n2P3/NP5P/P1PP1PPR/R1B1KB2 w Qkq - 0 11
+Hint for White (direct): c2c3
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c2c3, turn=Black, FEN=r1bqkb1r/1p1p1ppp/p3p3/2p5/1n2P3/NPP4P/P2P1PPR/R1B1KB2 b Qkq - 0 11
+AI moved: b4c6, turn=White, FEN=r1bqkb1r/1p1p1ppp/p1n1p3/2p5/4P3/NPP4P/P2P1PPR/R1B1KB2 w Qkq - 1 12
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Cleaned up old games
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Easy (Skill Level: 5)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=67, user_id=10
+Saved game to database: game_id=67, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=67, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f2f4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq - 0 1
+AI moved: g8f6, turn=White, FEN=rnbqkb1r/pppppppp/5n2/8/5P2/8/PPPPP1PP/RNBQKBNR w KQkq - 1 2
+Saved game to database: game_id=67, user_id=10
+Saved game to database: game_id=67, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Retrieved 3 games for user_id=10
+Loaded game from database: game_id=67, user_id=10
+Loaded game from database: game_id=66, user_id=10
+Saved game to database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=66, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Easy (Skill Level: 5)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f2f4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq - 0 1
+AI moved: g8f6, turn=White, FEN=rnbqkb1r/pppppppp/5n2/8/5P2/8/PPPPP1PP/RNBQKBNR w KQkq - 1 2
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkb1r/pppppppp/5n2/8/5P2/8/PPPPP1PP/RNBQKBNR w KQkq - 1 2
+Hint for White (direct): g2g3
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g2g3, turn=Black, FEN=rnbqkb1r/pppppppp/5n2/8/5P2/6P1/PPPPP2P/RNBQKBNR b KQkq - 0 2
+AI moved: d7d5, turn=White, FEN=rnbqkb1r/ppp1pppp/5n2/3p4/5P2/6P1/PPPPP2P/RNBQKBNR w KQkq - 0 3
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkb1r/ppp1pppp/5n2/3p4/5P2/6P1/PPPPP2P/RNBQKBNR w KQkq - 0 3
+Hint for White (direct): f1g2
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f1g2, turn=Black, FEN=rnbqkb1r/ppp1pppp/5n2/3p4/5P2/6P1/PPPPP1BP/RNBQK1NR b KQkq - 1 3
+AI moved: c7c5, turn=White, FEN=rnbqkb1r/pp2pppp/5n2/2pp4/5P2/6P1/PPPPP1BP/RNBQK1NR w KQkq - 0 4
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkb1r/pp2pppp/5n2/2pp4/5P2/6P1/PPPPP1BP/RNBQK1NR w KQkq - 0 4
+Hint for White (direct): d2d3
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d3, turn=Black, FEN=rnbqkb1r/pp2pppp/5n2/2pp4/5P2/3P2P1/PPP1P1BP/RNBQK1NR b KQkq - 0 4
+AI moved: b8c6, turn=White, FEN=r1bqkb1r/pp2pppp/2n2n2/2pp4/5P2/3P2P1/PPP1P1BP/RNBQK1NR w KQkq - 1 5
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp2pppp/2n2n2/2pp4/5P2/3P2P1/PPP1P1BP/RNBQK1NR w KQkq - 1 5
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=r1bqkb1r/pp2pppp/2n2n2/2pp4/5P2/3P1NP1/PPP1P1BP/RNBQK2R b KQkq - 2 5
+AI moved: g7g6, turn=White, FEN=r1bqkb1r/pp2pp1p/2n2np1/2pp4/5P2/3P1NP1/PPP1P1BP/RNBQK2R w KQkq - 0 6
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp2pp1p/2n2np1/2pp4/5P2/3P1NP1/PPP1P1BP/RNBQK2R w KQkq - 0 6
+Hint for White (direct): e1g1
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1g1, turn=Black, FEN=r1bqkb1r/pp2pp1p/2n2np1/2pp4/5P2/3P1NP1/PPP1P1BP/RNBQ1RK1 b kq - 1 6
+AI moved: f8g7, turn=White, FEN=r1bqk2r/pp2ppbp/2n2np1/2pp4/5P2/3P1NP1/PPP1P1BP/RNBQ1RK1 w kq - 2 7
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/pp2ppbp/2n2np1/2pp4/5P2/3P1NP1/PPP1P1BP/RNBQ1RK1 w kq - 2 7
+Hint for White (direct): d1e1
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d1e1, turn=Black, FEN=r1bqk2r/pp2ppbp/2n2np1/2pp4/5P2/3P1NP1/PPP1P1BP/RNB1QRK1 b kq - 3 7
+AI moved: d5d4, turn=White, FEN=r1bqk2r/pp2ppbp/2n2np1/2p5/3p1P2/3P1NP1/PPP1P1BP/RNB1QRK1 w kq - 0 8
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Easy (Skill Level: 5)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=69, user_id=10
+Saved game to database: game_id=69, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=69, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Easy (Skill Level: 5)
+Reset: player_color=Black, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+AI (White) moved: c2c3, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/8/2P5/PP1PPPPP/RNBQKBNR b KQkq - 0 1
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/8/2P5/PP1PPPPP/RNBQKBNR b KQkq - 0 1
+Hint for Black (direct): d7d5
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d7d5, turn=White, FEN=rnbqkbnr/ppp1pppp/8/3p4/8/2P5/PP1PPPPP/RNBQKBNR w KQkq - 0 2
+AI moved: d2d4, turn=Black, FEN=rnbqkbnr/ppp1pppp/8/3p4/3P4/2P5/PP2PPPP/RNBQKBNR b KQkq - 0 2
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Retrieved 6 games for user_id=10
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/ppp1pppp/8/3p4/3P4/2P5/PP2PPPP/RNBQKBNR b KQkq - 0 2
+Hint for Black (direct): c7c6
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c7c6, turn=White, FEN=rnbqkbnr/pp2pppp/2p5/3p4/3P4/2P5/PP2PPPP/RNBQKBNR w KQkq - 0 3
+AI moved: d1c2, turn=Black, FEN=rnbqkbnr/pp2pppp/2p5/3p4/3P4/2P5/PPQ1PPPP/RNB1KBNR b KQkq - 1 3
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkbnr/pp2pppp/2p5/3p4/3P4/2P5/PPQ1PPPP/RNB1KBNR b KQkq - 1 3
+Hint for Black (direct): g8f6
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g8f6, turn=White, FEN=rnbqkb1r/pp2pppp/2p2n2/3p4/3P4/2P5/PPQ1PPPP/RNB1KBNR w KQkq - 2 4
+AI moved: b1d2, turn=Black, FEN=rnbqkb1r/pp2pppp/2p2n2/3p4/3P4/2P5/PPQNPPPP/R1B1KBNR b KQkq - 3 4
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rnbqkb1r/pp2pppp/2p2n2/3p4/3P4/2P5/PPQNPPPP/R1B1KBNR b KQkq - 3 4
+Hint for Black (direct): b8d7
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c8d7, turn=White, FEN=rn1qkb1r/pp1bpppp/2p2n2/3p4/3P4/2P5/PPQNPPPP/R1B1KBNR w KQkq - 4 5
+AI moved: e2e4, turn=Black, FEN=rn1qkb1r/pp1bpppp/2p2n2/3p4/3PP3/2P5/PPQN1PPP/R1B1KBNR b KQkq - 0 5
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rn1qkb1r/pp1bpppp/2p2n2/3p4/3PP3/2P5/PPQN1PPP/R1B1KBNR b KQkq - 0 5
+Hint for Black (direct): d5e4
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d5e4, turn=White, FEN=rn1qkb1r/pp1bpppp/2p2n2/8/3Pp3/2P5/PPQN1PPP/R1B1KBNR w KQkq - 0 6
+AI moved: d2e4, turn=Black, FEN=rn1qkb1r/pp1bpppp/2p2n2/8/3PN3/2P5/PPQ2PPP/R1B1KBNR b KQkq - 0 6
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rn1qkb1r/pp1bpppp/2p2n2/8/3PN3/2P5/PPQ2PPP/R1B1KBNR b KQkq - 0 6
+Hint for Black (direct): f6e4
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f6e4, turn=White, FEN=rn1qkb1r/pp1bpppp/2p5/8/3Pn3/2P5/PPQ2PPP/R1B1KBNR w KQkq - 0 7
+AI moved: c2e4, turn=Black, FEN=rn1qkb1r/pp1bpppp/2p5/8/3PQ3/2P5/PP3PPP/R1B1KBNR b KQkq - 0 7
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=Black, turn=Black, FEN=rn1qkb1r/pp1bpppp/2p5/8/3PQ3/2P5/PP3PPP/R1B1KBNR b KQkq - 0 7
+Hint for Black (direct): d7e6
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d7e6, turn=White, FEN=rn1qkb1r/pp2pppp/2p1b3/8/3PQ3/2P5/PP3PPP/R1B1KBNR w KQkq - 1 8
+AI moved: g1f3, turn=Black, FEN=rn1qkb1r/pp2pppp/2p1b3/8/3PQ3/2P2N2/PP3PPP/R1B1KB1R b KQkq - 2 8
+Saved game to database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=70, user_id=10
+Saved game to database: game_id=70, user_id=10
+User logged out: user_id=10
+User logged in: username=Vatsal_12
+Saved game to database: game_id=71, user_id=9
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Hint for White (direct): e2e4
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Hint for White (direct): d2d4
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+AI moved: c5d4, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Hint for White (direct): f3d4
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f3d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+AI moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Hint for White (direct): b1c3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: b1c3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5
+AI moved: g7g6, turn=White, FEN=r1bqkb1r/pp1ppp1p/2n2np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppp1p/2n2np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Hint for White (direct): f1c4
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f1c4, turn=Black, FEN=r1bqkb1r/pp1ppp1p/2n2np1/8/2BNP3/2N5/PPP2PPP/R1BQK2R b KQkq - 1 6
+AI moved: d8a5, turn=White, FEN=r1b1kb1r/pp1ppp1p/2n2np1/q7/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq - 2 7
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1kb1r/pp1ppp1p/2n2np1/q7/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq - 2 7
+Hint for White (direct): d4b3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d4b3, turn=Black, FEN=r1b1kb1r/pp1ppp1p/2n2np1/q7/2B1P3/1NN5/PPP2PPP/R1BQK2R b KQkq - 3 7
+AI moved: a5c7, turn=White, FEN=r1b1kb1r/ppqppp1p/2n2np1/8/2B1P3/1NN5/PPP2PPP/R1BQK2R w KQkq - 4 8
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1kb1r/ppqppp1p/2n2np1/8/2B1P3/1NN5/PPP2PPP/R1BQK2R w KQkq - 4 8
+Hint for White (direct): c1g5
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c1g5, turn=Black, FEN=r1b1kb1r/ppqppp1p/2n2np1/6B1/2B1P3/1NN5/PPP2PPP/R2QK2R b KQkq - 5 8
+AI moved: f8g7, turn=White, FEN=r1b1k2r/ppqpppbp/2n2np1/6B1/2B1P3/1NN5/PPP2PPP/R2QK2R w KQkq - 6 9
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1k2r/ppqpppbp/2n2np1/6B1/2B1P3/1NN5/PPP2PPP/R2QK2R w KQkq - 6 9
+Hint for White (direct): c4e2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c4e2, turn=Black, FEN=r1b1k2r/ppqpppbp/2n2np1/6B1/4P3/1NN5/PPP1BPPP/R2QK2R b KQkq - 7 9
+AI moved: h7h6, turn=White, FEN=r1b1k2r/ppqpppb1/2n2npp/6B1/4P3/1NN5/PPP1BPPP/R2QK2R w KQkq - 0 10
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1k2r/ppqpppb1/2n2npp/6B1/4P3/1NN5/PPP1BPPP/R2QK2R w KQkq - 0 10
+Hint for White (direct): g5e3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: g5e3, turn=Black, FEN=r1b1k2r/ppqpppb1/2n2npp/8/4P3/1NN1B3/PPP1BPPP/R2QK2R b KQkq - 1 10
+AI moved: d7d6, turn=White, FEN=r1b1k2r/ppq1ppb1/2np1npp/8/4P3/1NN1B3/PPP1BPPP/R2QK2R w KQkq - 0 11
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1k2r/ppq1ppb1/2np1npp/8/4P3/1NN1B3/PPP1BPPP/R2QK2R w KQkq - 0 11
+Hint for White (direct): e1g1
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e1g1, turn=Black, FEN=r1b1k2r/ppq1ppb1/2np1npp/8/4P3/1NN1B3/PPP1BPPP/R2Q1RK1 b kq - 1 11
+AI moved: e8g8, turn=White, FEN=r1b2rk1/ppq1ppb1/2np1npp/8/4P3/1NN1B3/PPP1BPPP/R2Q1RK1 w - - 2 12
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b2rk1/ppq1ppb1/2np1npp/8/4P3/1NN1B3/PPP1BPPP/R2Q1RK1 w - - 2 12
+Hint for White (direct): d1d2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d1d2, turn=Black, FEN=r1b2rk1/ppq1ppb1/2np1npp/8/4P3/1NN1B3/PPPQBPPP/R4RK1 b - - 3 12
+AI moved: g8h7, turn=White, FEN=r1b2r2/ppq1ppbk/2np1npp/8/4P3/1NN1B3/PPPQBPPP/R4RK1 w - - 4 13
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b2r2/ppq1ppbk/2np1npp/8/4P3/1NN1B3/PPPQBPPP/R4RK1 w - - 4 13
+Hint for White (direct): c3d5
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c3d5, turn=Black, FEN=r1b2r2/ppq1ppbk/2np1npp/3N4/4P3/1N2B3/PPPQBPPP/R4RK1 b - - 5 13
+AI moved: c7d8, turn=White, FEN=r1bq1r2/pp2ppbk/2np1npp/3N4/4P3/1N2B3/PPPQBPPP/R4RK1 w - - 6 14
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bq1r2/pp2ppbk/2np1npp/3N4/4P3/1N2B3/PPPQBPPP/R4RK1 w - - 6 14
+Hint for White (direct): d5f6
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d5f6, turn=Black, FEN=r1bq1r2/pp2ppbk/2np1Npp/8/4P3/1N2B3/PPPQBPPP/R4RK1 b - - 0 14
+AI moved: g7f6, turn=White, FEN=r1bq1r2/pp2pp1k/2np1bpp/8/4P3/1N2B3/PPPQBPPP/R4RK1 w - - 0 15
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bq1r2/pp2pp1k/2np1bpp/8/4P3/1N2B3/PPPQBPPP/R4RK1 w - - 0 15
+Hint for White (direct): e3h6
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e3h6, turn=Black, FEN=r1bq1r2/pp2pp1k/2np1bpB/8/4P3/1N6/PPPQBPPP/R4RK1 b - - 0 15
+AI moved: f6b2, turn=White, FEN=r1bq1r2/pp2pp1k/2np2pB/8/4P3/1N6/PbPQBPPP/R4RK1 w - - 0 16
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bq1r2/pp2pp1k/2np2pB/8/4P3/1N6/PbPQBPPP/R4RK1 w - - 0 16
+Hint for White (direct): h6f8
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: h6f8, turn=Black, FEN=r1bq1B2/pp2pp1k/2np2p1/8/4P3/1N6/PbPQBPPP/R4RK1 b - - 0 16
+AI moved: b2a1, turn=White, FEN=r1bq1B2/pp2pp1k/2np2p1/8/4P3/1N6/P1PQBPPP/b4RK1 w - - 0 17
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bq1B2/pp2pp1k/2np2p1/8/4P3/1N6/P1PQBPPP/b4RK1 w - - 0 17
+Hint for White (direct): f8e7
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f8e7, turn=Black, FEN=r1bq4/pp2Bp1k/2np2p1/8/4P3/1N6/P1PQBPPP/b4RK1 b - - 0 17
+AI moved: d8e7, turn=White, FEN=r1b5/pp2qp1k/2np2p1/8/4P3/1N6/P1PQBPPP/b4RK1 w - - 0 18
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b5/pp2qp1k/2np2p1/8/4P3/1N6/P1PQBPPP/b4RK1 w - - 0 18
+Hint for White (direct): f1a1
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f1a1, turn=Black, FEN=r1b5/pp2qp1k/2np2p1/8/4P3/1N6/P1PQBPPP/R5K1 b - - 0 18
+AI moved: e7e4, turn=White, FEN=r1b5/pp3p1k/2np2p1/8/4q3/1N6/P1PQBPPP/R5K1 w - - 0 19
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b5/pp3p1k/2np2p1/8/4q3/1N6/P1PQBPPP/R5K1 w - - 0 19
+Hint for White (direct): e2f3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e2f3, turn=Black, FEN=r1b5/pp3p1k/2np2p1/8/4q3/1N3B2/P1PQ1PPP/R5K1 b - - 1 19
+AI moved: e4h4, turn=White, FEN=r1b5/pp3p1k/2np2p1/8/7q/1N3B2/P1PQ1PPP/R5K1 w - - 2 20
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b5/pp3p1k/2np2p1/8/7q/1N3B2/P1PQ1PPP/R5K1 w - - 2 20
+Hint for White (direct): a1e1
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: a1e1, turn=Black, FEN=r1b5/pp3p1k/2np2p1/8/7q/1N3B2/P1PQ1PPP/4R1K1 b - - 3 20
+AI moved: c8e6, turn=White, FEN=r7/pp3p1k/2npb1p1/8/7q/1N3B2/P1PQ1PPP/4R1K1 w - - 4 21
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r7/pp3p1k/2npb1p1/8/7q/1N3B2/P1PQ1PPP/4R1K1 w - - 4 21
+Hint for White (direct): d2d6
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d6, turn=Black, FEN=r7/pp3p1k/2nQb1p1/8/7q/1N3B2/P1P2PPP/4R1K1 b - - 0 21
+AI moved: a8d8, turn=White, FEN=3r4/pp3p1k/2nQb1p1/8/7q/1N3B2/P1P2PPP/4R1K1 w - - 1 22
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=3r4/pp3p1k/2nQb1p1/8/7q/1N3B2/P1P2PPP/4R1K1 w - - 1 22
+Hint for White (direct): d6c5
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d6c5, turn=Black, FEN=3r4/pp3p1k/2n1b1p1/2Q5/7q/1N3B2/P1P2PPP/4R1K1 b - - 2 22
+AI moved: h4b4, turn=White, FEN=3r4/pp3p1k/2n1b1p1/2Q5/1q6/1N3B2/P1P2PPP/4R1K1 w - - 3 23
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=3r4/pp3p1k/2n1b1p1/2Q5/1q6/1N3B2/P1P2PPP/4R1K1 w - - 3 23
+Hint for White (direct): c2c3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c2c3, turn=Black, FEN=3r4/pp3p1k/2n1b1p1/2Q5/1q6/1NP2B2/P4PPP/4R1K1 b - - 0 23
+AI moved: b4f4, turn=White, FEN=3r4/pp3p1k/2n1b1p1/2Q5/5q2/1NP2B2/P4PPP/4R1K1 w - - 1 24
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=3r4/pp3p1k/2n1b1p1/2Q5/5q2/1NP2B2/P4PPP/4R1K1 w - - 1 24
+Hint for White (direct): f3c6
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f3c6, turn=Black, FEN=3r4/pp3p1k/2B1b1p1/2Q5/5q2/1NP5/P4PPP/4R1K1 b - - 0 24
+AI moved: b7c6, turn=White, FEN=3r4/p4p1k/2p1b1p1/2Q5/5q2/1NP5/P4PPP/4R1K1 w - - 0 25
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=3r4/p4p1k/2p1b1p1/2Q5/5q2/1NP5/P4PPP/4R1K1 w - - 0 25
+Hint for White (direct): c5a7
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c5a7, turn=Black, FEN=3r4/Q4p1k/2p1b1p1/8/5q2/1NP5/P4PPP/4R1K1 b - - 0 25
+AI moved: f4e5, turn=White, FEN=3r4/Q4p1k/2p1b1p1/4q3/8/1NP5/P4PPP/4R1K1 w - - 1 26
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=3r4/Q4p1k/2p1b1p1/4q3/8/1NP5/P4PPP/4R1K1 w - - 1 26
+Hint for White (direct): a7e3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: a7e3, turn=Black, FEN=3r4/5p1k/2p1b1p1/4q3/8/1NP1Q3/P4PPP/4R1K1 b - - 2 26
+AI moved: e5e3, turn=White, FEN=3r4/5p1k/2p1b1p1/8/8/1NP1q3/P4PPP/4R1K1 w - - 0 27
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=3r4/5p1k/2p1b1p1/8/8/1NP1q3/P4PPP/4R1K1 w - - 0 27
+Hint for White (direct): f2e3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f2e3, turn=Black, FEN=3r4/5p1k/2p1b1p1/8/8/1NP1P3/P5PP/4R1K1 b - - 0 27
+AI moved: d8d3, turn=White, FEN=8/5p1k/2p1b1p1/8/8/1NPrP3/P5PP/4R1K1 w - - 1 28
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2p1b1p1/8/8/1NPrP3/P5PP/4R1K1 w - - 1 28
+Hint for White (direct): e1c1
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e1c1, turn=Black, FEN=8/5p1k/2p1b1p1/8/8/1NPrP3/P5PP/2R3K1 b - - 2 28
+AI moved: d3e3, turn=White, FEN=8/5p1k/2p1b1p1/8/8/1NP1r3/P5PP/2R3K1 w - - 0 29
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2p1b1p1/8/8/1NP1r3/P5PP/2R3K1 w - - 0 29
+Hint for White (direct): g1f2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f2, turn=Black, FEN=8/5p1k/2p1b1p1/8/8/1NP1r3/P4KPP/2R5 b - - 1 29
+AI moved: e3d3, turn=White, FEN=8/5p1k/2p1b1p1/8/8/1NPr4/P4KPP/2R5 w - - 2 30
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2p1b1p1/8/8/1NPr4/P4KPP/2R5 w - - 2 30
+Hint for White (direct): c1c2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c1c2, turn=Black, FEN=8/5p1k/2p1b1p1/8/8/1NPr4/P1R2KPP/8 b - - 3 30
+AI moved: e6c4, turn=White, FEN=8/5p1k/2p3p1/8/2b5/1NPr4/P1R2KPP/8 w - - 4 31
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2p3p1/8/2b5/1NPr4/P1R2KPP/8 w - - 4 31
+Hint for White (direct): b3a5
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: b3a5, turn=Black, FEN=8/5p1k/2p3p1/N7/2b5/2Pr4/P1R2KPP/8 b - - 5 31
+AI moved: c4d5, turn=White, FEN=8/5p1k/2p3p1/N2b4/8/2Pr4/P1R2KPP/8 w - - 6 32
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2p3p1/N2b4/8/2Pr4/P1R2KPP/8 w - - 6 32
+Hint for White (direct): f2e2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f2e2, turn=Black, FEN=8/5p1k/2p3p1/N2b4/8/2Pr4/P1R1K1PP/8 b - - 7 32
+AI moved: d5e4, turn=White, FEN=8/5p1k/2p3p1/N7/4b3/2Pr4/P1R1K1PP/8 w - - 8 33
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2p3p1/N7/4b3/2Pr4/P1R1K1PP/8 w - - 8 33
+Hint for White (direct): a5b7
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: a5b7, turn=Black, FEN=8/1N3p1k/2p3p1/8/4b3/2Pr4/P1R1K1PP/8 b - - 9 33
+AI moved: d3d5, turn=White, FEN=8/1N3p1k/2p3p1/3r4/4b3/2P5/P1R1K1PP/8 w - - 10 34
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/1N3p1k/2p3p1/3r4/4b3/2P5/P1R1K1PP/8 w - - 10 34
+Hint for White (direct): c2d2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c2d2, turn=Black, FEN=8/1N3p1k/2p3p1/3r4/4b3/2P5/P2RK1PP/8 b - - 11 34
+AI moved: d5e5, turn=White, FEN=8/1N3p1k/2p3p1/4r3/4b3/2P5/P2RK1PP/8 w - - 12 35
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/1N3p1k/2p3p1/4r3/4b3/2P5/P2RK1PP/8 w - - 12 35
+Hint for White (direct): e2f2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e2f2, turn=Black, FEN=8/1N3p1k/2p3p1/4r3/4b3/2P5/P2R1KPP/8 b - - 13 35
+AI moved: c6c5, turn=White, FEN=8/1N3p1k/6p1/2p1r3/4b3/2P5/P2R1KPP/8 w - - 0 36
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/1N3p1k/6p1/2p1r3/4b3/2P5/P2R1KPP/8 w - - 0 36
+Hint for White (direct): b7d6
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: b7d6, turn=Black, FEN=8/5p1k/3N2p1/2p1r3/4b3/2P5/P2R1KPP/8 b - - 1 36
+AI moved: e4c6, turn=White, FEN=8/5p1k/2bN2p1/2p1r3/8/2P5/P2R1KPP/8 w - - 2 37
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2bN2p1/2p1r3/8/2P5/P2R1KPP/8 w - - 2 37
+Hint for White (direct): d6c4
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d6c4, turn=Black, FEN=8/5p1k/2b3p1/2p1r3/2N5/2P5/P2R1KPP/8 b - - 3 37
+AI moved: e5f5, turn=White, FEN=8/5p1k/2b3p1/2p2r2/2N5/2P5/P2R1KPP/8 w - - 4 38
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5p1k/2b3p1/2p2r2/2N5/2P5/P2R1KPP/8 w - - 4 38
+Hint for White (direct): f2e3
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f2e3, turn=Black, FEN=8/5p1k/2b3p1/2p2r2/2N5/2P1K3/P2R2PP/8 b - - 5 38
+AI moved: h7g7, turn=White, FEN=8/5pk1/2b3p1/2p2r2/2N5/2P1K3/P2R2PP/8 w - - 6 39
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5pk1/2b3p1/2p2r2/2N5/2P1K3/P2R2PP/8 w - - 6 39
+Hint for White (direct): d2f2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: d2f2, turn=Black, FEN=8/5pk1/2b3p1/2p2r2/2N5/2P1K3/P4RPP/8 b - - 7 39
+AI moved: f5d5, turn=White, FEN=8/5pk1/2b3p1/2pr4/2N5/2P1K3/P4RPP/8 w - - 8 40
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5pk1/2b3p1/2pr4/2N5/2P1K3/P4RPP/8 w - - 8 40
+Hint for White (direct): f2d2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: f2d2, turn=Black, FEN=8/5pk1/2b3p1/2pr4/2N5/2P1K3/P2R2PP/8 b - - 9 40
+AI moved: d5f5, turn=White, FEN=8/5pk1/2b3p1/2p2r2/2N5/2P1K3/P2R2PP/8 w - - 10 41
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5pk1/2b3p1/2p2r2/2N5/2P1K3/P2R2PP/8 w - - 10 41
+Hint for White (direct): c4b6
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c4b6, turn=Black, FEN=8/5pk1/1Nb3p1/2p2r2/8/2P1K3/P2R2PP/8 b - - 11 41
+AI moved: f5f6, turn=White, FEN=8/5pk1/1Nb2rp1/2p5/8/2P1K3/P2R2PP/8 w - - 12 42
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5pk1/1Nb2rp1/2p5/8/2P1K3/P2R2PP/8 w - - 12 42
+Hint for White (direct): b6c4
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: b6c4, turn=Black, FEN=8/5pk1/2b2rp1/2p5/2N5/2P1K3/P2R2PP/8 b - - 13 42
+AI moved: f6e6, turn=White, FEN=8/5pk1/2b1r1p1/2p5/2N5/2P1K3/P2R2PP/8 w - - 14 43
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5pk1/2b1r1p1/2p5/2N5/2P1K3/P2R2PP/8 w - - 14 43
+Hint for White (direct): e3f2
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: e3f2, turn=Black, FEN=8/5pk1/2b1r1p1/2p5/2N5/2P5/P2R1KPP/8 b - - 15 43
+AI moved: c6b5, turn=White, FEN=8/5pk1/4r1p1/1bp5/2N5/2P5/P2R1KPP/8 w - - 16 44
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/5pk1/4r1p1/1bp5/2N5/2P5/P2R1KPP/8 w - - 16 44
+Hint for White (direct): c4a5
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Player moved: c4a5, turn=Black, FEN=8/5pk1/4r1p1/Nbp5/8/2P5/P2R1KPP/8 b - - 17 44
+AI moved: e6e4, turn=White, FEN=8/5pk1/6p1/Nbp5/4r3/2P5/P2R1KPP/8 w - - 18 45
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Cleaned up old games
+Loaded game from database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=72, user_id=9
+Saved game to database: game_id=72, user_id=9
+Cleaned up old games
+Stockfish engine closed
+Retrieved 2 games for user_id=9
+Loaded game from database: game_id=72, user_id=9
+Loaded game from database: game_id=71, user_id=9
+Saved game to database: game_id=71, user_id=9
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+User logged in: username=choti elaichi
+Saved game to database: game_id=73, user_id=10
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g2g4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq - 0 1
+AI moved: d7d5, turn=White, FEN=rnbqkbnr/ppp1pppp/8/3p4/6P1/8/PPPPPP1P/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f2f4, turn=Black, FEN=rnbqkbnr/ppp1pppp/8/3p4/5PP1/8/PPPPP2P/RNBQKBNR b KQkq - 0 2
+AI moved: c8g4, turn=White, FEN=rn1qkbnr/ppp1pppp/8/3p4/5Pb1/8/PPPPP2P/RNBQKBNR w KQkq - 0 3
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rn1qkbnr/ppp1pppp/8/3p4/5Pb1/5N2/PPPPP2P/RNBQKB1R b KQkq - 1 3
+AI moved: g4f3, turn=White, FEN=rn1qkbnr/ppp1pppp/8/3p4/5P2/5b2/PPPPP2P/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2f3, turn=Black, FEN=rn1qkbnr/ppp1pppp/8/3p4/5P2/5P2/PPPP3P/RNBQKB1R b KQkq - 0 4
+AI moved: e7e6, turn=White, FEN=rn1qkbnr/ppp2ppp/4p3/3p4/5P2/5P2/PPPP3P/RNBQKB1R w KQkq - 0 5
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=rn1qkbnr/ppp2ppp/4p3/3p4/3P1P2/5P2/PPP4P/RNBQKB1R b KQkq - 0 5
+AI moved: d8h4, turn=White, FEN=rn2kbnr/ppp2ppp/4p3/3p4/3P1P1q/5P2/PPP4P/RNBQKB1R w KQkq - 1 6
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1d2, turn=Black, FEN=rn2kbnr/ppp2ppp/4p3/3p4/3P1P1q/5P2/PPPK3P/RNBQ1B1R b kq - 2 6
+AI moved: h4f4, turn=White, FEN=rn2kbnr/ppp2ppp/4p3/3p4/3P1q2/5P2/PPPK3P/RNBQ1B1R w kq - 0 7
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2e2, turn=Black, FEN=rn2kbnr/ppp2ppp/4p3/3p4/3P1q2/5P2/PPP1K2P/RNBQ1B1R b kq - 1 7
+AI moved: f4f6, turn=White, FEN=rn2kbnr/ppp2ppp/4pq2/3p4/3P4/5P2/PPP1K2P/RNBQ1B1R w kq - 2 8
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e1, turn=Black, FEN=rn2kbnr/ppp2ppp/4pq2/3p4/3P4/5P2/PPP4P/RNBQKB1R b kq - 3 8
+AI moved: f6h4, turn=White, FEN=rn2kbnr/ppp2ppp/4p3/3p4/3P3q/5P2/PPP4P/RNBQKB1R w kq - 4 9
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1e2, turn=Black, FEN=rn2kbnr/ppp2ppp/4p3/3p4/3P3q/5P2/PPP1K2P/RNBQ1B1R b kq - 5 9
+AI moved: b8d7, turn=White, FEN=r3kbnr/pppn1ppp/4p3/3p4/3P3q/5P2/PPP1K2P/RNBQ1B1R w kq - 6 10
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kbnr/pppn1ppp/4p3/3p4/3P3q/5P2/PPP1K2P/RNBQ1B1R w kq - 6 10
+Hint for White (direct): c1e3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c1e3, turn=Black, FEN=r3kbnr/pppn1ppp/4p3/3p4/3P3q/4BP2/PPP1K2P/RN1Q1B1R b kq - 7 10
+AI moved: g8e7, turn=White, FEN=r3kb1r/pppnnppp/4p3/3p4/3P3q/4BP2/PPP1K2P/RN1Q1B1R w kq - 8 11
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kb1r/pppnnppp/4p3/3p4/3P3q/4BP2/PPP1K2P/RN1Q1B1R w kq - 8 11
+Hint for White (direct): b1c3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b1c3, turn=Black, FEN=r3kb1r/pppnnppp/4p3/3p4/3P3q/2N1BP2/PPP1K2P/R2Q1B1R b kq - 9 11
+AI moved: c7c6, turn=White, FEN=r3kb1r/pp1nnppp/2p1p3/3p4/3P3q/2N1BP2/PPP1K2P/R2Q1B1R w kq - 0 12
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kb1r/pp1nnppp/2p1p3/3p4/3P3q/2N1BP2/PPP1K2P/R2Q1B1R w kq - 0 12
+Hint for White (direct): e3f2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e3f2, turn=Black, FEN=r3kb1r/pp1nnppp/2p1p3/3p4/3P3q/2N2P2/PPP1KB1P/R2Q1B1R b kq - 1 12
+AI moved: h4f6, turn=White, FEN=r3kb1r/pp1nnppp/2p1pq2/3p4/3P4/2N2P2/PPP1KB1P/R2Q1B1R w kq - 2 13
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kb1r/pp1nnppp/2p1pq2/3p4/3P4/2N2P2/PPP1KB1P/R2Q1B1R w kq - 2 13
+Hint for White (direct): h2h4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h2h4, turn=Black, FEN=r3kb1r/pp1nnppp/2p1pq2/3p4/3P3P/2N2P2/PPP1KB2/R2Q1B1R b kq - 0 13
+AI moved: e7f5, turn=White, FEN=r3kb1r/pp1n1ppp/2p1pq2/3p1n2/3P3P/2N2P2/PPP1KB2/R2Q1B1R w kq - 1 14
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kb1r/pp1n1ppp/2p1pq2/3p1n2/3P3P/2N2P2/PPP1KB2/R2Q1B1R w kq - 1 14
+Hint for White (direct): e2e1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e1, turn=Black, FEN=r3kb1r/pp1n1ppp/2p1pq2/3p1n2/3P3P/2N2P2/PPP2B2/R2QKB1R b kq - 2 14
+AI moved: h7h5, turn=White, FEN=r3kb1r/pp1n1pp1/2p1pq2/3p1n1p/3P3P/2N2P2/PPP2B2/R2QKB1R w kq - 0 15
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kb1r/pp1n1pp1/2p1pq2/3p1n1p/3P3P/2N2P2/PPP2B2/R2QKB1R w kq - 0 15
+Hint for White (direct): d1d3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d1d3, turn=Black, FEN=r3kb1r/pp1n1pp1/2p1pq2/3p1n1p/3P3P/2NQ1P2/PPP2B2/R3KB1R b kq - 1 15
+AI moved: f8d6, turn=White, FEN=r3k2r/pp1n1pp1/2pbpq2/3p1n1p/3P3P/2NQ1P2/PPP2B2/R3KB1R w kq - 2 16
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3k2r/pp1n1pp1/2pbpq2/3p1n1p/3P3P/2NQ1P2/PPP2B2/R3KB1R w kq - 2 16
+Hint for White (direct): c3e2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c3e2, turn=Black, FEN=r3k2r/pp1n1pp1/2pbpq2/3p1n1p/3P3P/3Q1P2/PPP1NB2/R3KB1R b kq - 3 16
+AI moved: d7f8, turn=White, FEN=r3kn1r/pp3pp1/2pbpq2/3p1n1p/3P3P/3Q1P2/PPP1NB2/R3KB1R w kq - 4 17
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3kn1r/pp3pp1/2pbpq2/3p1n1p/3P3P/3Q1P2/PPP1NB2/R3KB1R w kq - 4 17
+Hint for White (direct): e1d2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1d2, turn=Black, FEN=r3kn1r/pp3pp1/2pbpq2/3p1n1p/3P3P/3Q1P2/PPPKNB2/R4B1R b kq - 5 17
+AI moved: f8g6, turn=White, FEN=r3k2r/pp3pp1/2pbpqn1/3p1n1p/3P3P/3Q1P2/PPPKNB2/R4B1R w kq - 6 18
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3k2r/pp3pp1/2pbpqn1/3p1n1p/3P3P/3Q1P2/PPPKNB2/R4B1R w kq - 6 18
+Hint for White (direct): f1h3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f1h3, turn=Black, FEN=r3k2r/pp3pp1/2pbpqn1/3p1n1p/3P3P/3Q1P1B/PPPKNB2/R6R b kq - 7 18
+AI moved: f5h4, turn=White, FEN=r3k2r/pp3pp1/2pbpqn1/3p3p/3P3n/3Q1P1B/PPPKNB2/R6R w kq - 0 19
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3k2r/pp3pp1/2pbpqn1/3p3p/3P3n/3Q1P1B/PPPKNB2/R6R w kq - 0 19
+Hint for White (direct): a1f1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a1f1, turn=Black, FEN=r3k2r/pp3pp1/2pbpqn1/3p3p/3P3n/3Q1P1B/PPPKNB2/5R1R b kq - 1 19
+AI moved: h4f5, turn=White, FEN=r3k2r/pp3pp1/2pbpqn1/3p1n1p/3P4/3Q1P1B/PPPKNB2/5R1R w kq - 2 20
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3k2r/pp3pp1/2pbpqn1/3p1n1p/3P4/3Q1P1B/PPPKNB2/5R1R w kq - 2 20
+Hint for White (direct): f1g1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f1g1, turn=Black, FEN=r3k2r/pp3pp1/2pbpqn1/3p1n1p/3P4/3Q1P1B/PPPKNB2/6RR b kq - 3 20
+AI moved: g6f4, turn=White, FEN=r3k2r/pp3pp1/2pbpq2/3p1n1p/3P1n2/3Q1P1B/PPPKNB2/6RR w kq - 4 21
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3k2r/pp3pp1/2pbpq2/3p1n1p/3P1n2/3Q1P1B/PPPKNB2/6RR w kq - 4 21
+Hint for White (direct): e2f4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2f4, turn=Black, FEN=r3k2r/pp3pp1/2pbpq2/3p1n1p/3P1N2/3Q1P1B/PPPK1B2/6RR b kq - 0 21
+AI moved: d6f4, turn=White, FEN=r3k2r/pp3pp1/2p1pq2/3p1n1p/3P1b2/3Q1P1B/PPPK1B2/6RR w kq - 0 22
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r3k2r/pp3pp1/2p1pq2/3p1n1p/3P1b2/3Q1P1B/PPPK1B2/6RR w kq - 0 22
+Hint for White (direct): d2c3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2c3, turn=Black, FEN=r3k2r/pp3pp1/2p1pq2/3p1n1p/3P1b2/2KQ1P1B/PPP2B2/6RR b kq - 1 22
+AI moved: e8f8, turn=White, FEN=r4k1r/pp3pp1/2p1pq2/3p1n1p/3P1b2/2KQ1P1B/PPP2B2/6RR w - - 2 23
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r4k1r/pp3pp1/2p1pq2/3p1n1p/3P1b2/2KQ1P1B/PPP2B2/6RR w - - 2 23
+Hint for White (direct): c3b3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c3b3, turn=Black, FEN=r4k1r/pp3pp1/2p1pq2/3p1n1p/3P1b2/1K1Q1P1B/PPP2B2/6RR b - - 3 23
+AI moved: a8e8, turn=White, FEN=4rk1r/pp3pp1/2p1pq2/3p1n1p/3P1b2/1K1Q1P1B/PPP2B2/6RR w - - 4 24
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk1r/pp3pp1/2p1pq2/3p1n1p/3P1b2/1K1Q1P1B/PPP2B2/6RR w - - 4 24
+Hint for White (direct): a2a3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a2a3, turn=Black, FEN=4rk1r/pp3pp1/2p1pq2/3p1n1p/3P1b2/PK1Q1P1B/1PP2B2/6RR b - - 0 24
+AI moved: g7g6, turn=White, FEN=4rk1r/pp3p2/2p1pqp1/3p1n1p/3P1b2/PK1Q1P1B/1PP2B2/6RR w - - 0 25
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk1r/pp3p2/2p1pqp1/3p1n1p/3P1b2/PK1Q1P1B/1PP2B2/6RR w - - 0 25
+Hint for White (direct): b3a2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b3a2, turn=Black, FEN=4rk1r/pp3p2/2p1pqp1/3p1n1p/3P1b2/P2Q1P1B/KPP2B2/6RR b - - 1 25
+AI moved: h5h4, turn=White, FEN=4rk1r/pp3p2/2p1pqp1/3p1n2/3P1b1p/P2Q1P1B/KPP2B2/6RR w - - 0 26
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk1r/pp3p2/2p1pqp1/3p1n2/3P1b1p/P2Q1P1B/KPP2B2/6RR w - - 0 26
+Hint for White (direct): g1g4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1g4, turn=Black, FEN=4rk1r/pp3p2/2p1pqp1/3p1n2/3P1bRp/P2Q1P1B/KPP2B2/7R b - - 1 26
+AI moved: f4g3, turn=White, FEN=4rk1r/pp3p2/2p1pqp1/3p1n2/3P2Rp/P2Q1PbB/KPP2B2/7R w - - 2 27
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk1r/pp3p2/2p1pqp1/3p1n2/3P2Rp/P2Q1PbB/KPP2B2/7R w - - 2 27
+Hint for White (direct): f2e1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f2e1, turn=Black, FEN=4rk1r/pp3p2/2p1pqp1/3p1n2/3P2Rp/P2Q1PbB/KPP5/4B2R b - - 3 27
+AI moved: h8h5, turn=White, FEN=4rk2/pp3p2/2p1pqp1/3p1n1r/3P2Rp/P2Q1PbB/KPP5/4B2R w - - 4 28
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk2/pp3p2/2p1pqp1/3p1n1r/3P2Rp/P2Q1PbB/KPP5/4B2R w - - 4 28
+Hint for White (direct): e1b4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1b4, turn=Black, FEN=4rk2/pp3p2/2p1pqp1/3p1n1r/1B1P2Rp/P2Q1PbB/KPP5/7R b - - 5 28
+AI moved: g3d6, turn=White, FEN=4rk2/pp3p2/2pbpqp1/3p1n1r/1B1P2Rp/P2Q1P1B/KPP5/7R w - - 6 29
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk2/pp3p2/2pbpqp1/3p1n1r/1B1P2Rp/P2Q1P1B/KPP5/7R w - - 6 29
+Hint for White (direct): b4d6
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b4d6, turn=Black, FEN=4rk2/pp3p2/2pBpqp1/3p1n1r/3P2Rp/P2Q1P1B/KPP5/7R b - - 0 29
+AI moved: f5d6, turn=White, FEN=4rk2/pp3p2/2pnpqp1/3p3r/3P2Rp/P2Q1P1B/KPP5/7R w - - 0 30
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4rk2/pp3p2/2pnpqp1/3p3r/3P2Rp/P2Q1P1B/KPP5/7R w - - 0 30
+Hint for White (direct): d3d2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d3d2, turn=Black, FEN=4rk2/pp3p2/2pnpqp1/3p3r/3P2Rp/P4P1B/KPPQ4/7R b - - 1 30
+AI moved: f8g7, turn=White, FEN=4r3/pp3pk1/2pnpqp1/3p3r/3P2Rp/P4P1B/KPPQ4/7R w - - 2 31
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4r3/pp3pk1/2pnpqp1/3p3r/3P2Rp/P4P1B/KPPQ4/7R w - - 2 31
+Hint for White (direct): h3f1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h3f1, turn=Black, FEN=4r3/pp3pk1/2pnpqp1/3p3r/3P2Rp/P4P2/KPPQ4/5B1R b - - 3 31
+AI moved: f6f3, turn=White, FEN=4r3/pp3pk1/2pnp1p1/3p3r/3P2Rp/P4q2/KPPQ4/5B1R w - - 0 32
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4r3/pp3pk1/2pnp1p1/3p3r/3P2Rp/P4q2/KPPQ4/5B1R w - - 0 32
+Hint for White (direct): h1g1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h1g1, turn=Black, FEN=4r3/pp3pk1/2pnp1p1/3p3r/3P2Rp/P4q2/KPPQ4/5BR1 b - - 1 32
+AI moved: f3f6, turn=White, FEN=4r3/pp3pk1/2pnpqp1/3p3r/3P2Rp/P7/KPPQ4/5BR1 w - - 2 33
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4r3/pp3pk1/2pnpqp1/3p3r/3P2Rp/P7/KPPQ4/5BR1 w - - 2 33
+Hint for White (direct): f1d3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f1d3, turn=Black, FEN=4r3/pp3pk1/2pnpqp1/3p3r/3P2Rp/P2B4/KPPQ4/6R1 b - - 3 33
+AI moved: d6f5, turn=White, FEN=4r3/pp3pk1/2p1pqp1/3p1n1r/3P2Rp/P2B4/KPPQ4/6R1 w - - 4 34
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=4r3/pp3pk1/2p1pqp1/3p1n1r/3P2Rp/P2B4/KPPQ4/6R1 w - - 4 34
+Hint for White (direct): d2b4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2b4, turn=Black, FEN=4r3/pp3pk1/2p1pqp1/3p1n1r/1Q1P2Rp/P2B4/KPP5/6R1 b - - 5 34
+AI moved: e8e7, turn=White, FEN=8/pp2rpk1/2p1pqp1/3p1n1r/1Q1P2Rp/P2B4/KPP5/6R1 w - - 6 35
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp2rpk1/2p1pqp1/3p1n1r/1Q1P2Rp/P2B4/KPP5/6R1 w - - 6 35
+Hint for White (direct): b4e1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b4e1, turn=Black, FEN=8/pp2rpk1/2p1pqp1/3p1n1r/3P2Rp/P2B4/KPP5/4Q1R1 b - - 7 35
+AI moved: h4h3, turn=White, FEN=8/pp2rpk1/2p1pqp1/3p1n1r/3P2R1/P2B3p/KPP5/4Q1R1 w - - 0 36
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp2rpk1/2p1pqp1/3p1n1r/3P2R1/P2B3p/KPP5/4Q1R1 w - - 0 36
+Hint for White (direct): g4f4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g4f4, turn=Black, FEN=8/pp2rpk1/2p1pqp1/3p1n1r/3P1R2/P2B3p/KPP5/4Q1R1 b - - 1 36
+AI moved: e7d7, turn=White, FEN=8/pp1r1pk1/2p1pqp1/3p1n1r/3P1R2/P2B3p/KPP5/4Q1R1 w - - 2 37
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1pk1/2p1pqp1/3p1n1r/3P1R2/P2B3p/KPP5/4Q1R1 w - - 2 37
+Hint for White (direct): e1e2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1e2, turn=Black, FEN=8/pp1r1pk1/2p1pqp1/3p1n1r/3P1R2/P2B3p/KPP1Q3/6R1 b - - 3 37
+AI moved: h3h2, turn=White, FEN=8/pp1r1pk1/2p1pqp1/3p1n1r/3P1R2/P2B4/KPP1Q2p/6R1 w - - 0 38
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1pk1/2p1pqp1/3p1n1r/3P1R2/P2B4/KPP1Q2p/6R1 w - - 0 38
+Hint for White (direct): g1h1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1h1, turn=Black, FEN=8/pp1r1pk1/2p1pqp1/3p1n1r/3P1R2/P2B4/KPP1Q2p/7R b - - 1 38
+AI moved: f5g3, turn=White, FEN=8/pp1r1pk1/2p1pqp1/3p3r/3P1R2/P2B2n1/KPP1Q2p/7R w - - 2 39
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1pk1/2p1pqp1/3p3r/3P1R2/P2B2n1/KPP1Q2p/7R w - - 2 39
+Hint for White (direct): f4f6
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f4f6, turn=Black, FEN=8/pp1r1pk1/2p1pRp1/3p3r/3P4/P2B2n1/KPP1Q2p/7R b - - 0 39
+AI moved: g3e2, turn=White, FEN=8/pp1r1pk1/2p1pRp1/3p3r/3P4/P2B4/KPP1n2p/7R w - - 0 40
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1pk1/2p1pRp1/3p3r/3P4/P2B4/KPP1n2p/7R w - - 0 40
+Hint for White (direct): d3e2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d3e2, turn=Black, FEN=8/pp1r1pk1/2p1pRp1/3p3r/3P4/P7/KPP1B2p/7R b - - 0 40
+AI moved: g7f6, turn=White, FEN=8/pp1r1p2/2p1pkp1/3p3r/3P4/P7/KPP1B2p/7R w - - 0 41
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1p2/2p1pkp1/3p3r/3P4/P7/KPP1B2p/7R w - - 0 41
+Hint for White (direct): e2h5
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2h5, turn=Black, FEN=8/pp1r1p2/2p1pkp1/3p3B/3P4/P7/KPP4p/7R b - - 0 41
+AI moved: g6h5, turn=White, FEN=8/pp1r1p2/2p1pk2/3p3p/3P4/P7/KPP4p/7R w - - 0 42
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1p2/2p1pk2/3p3p/3P4/P7/KPP4p/7R w - - 0 42
+Hint for White (direct): h1h2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h1h2, turn=Black, FEN=8/pp1r1p2/2p1pk2/3p3p/3P4/P7/KPP4R/8 b - - 0 42
+AI moved: f6g5, turn=White, FEN=8/pp1r1p2/2p1p3/3p2kp/3P4/P7/KPP4R/8 w - - 1 43
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1p2/2p1p3/3p2kp/3P4/P7/KPP4R/8 w - - 1 43
+Hint for White (direct): h2g2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h2g2, turn=Black, FEN=8/pp1r1p2/2p1p3/3p2kp/3P4/P7/KPP3R1/8 b - - 2 43
+AI moved: g5h6, turn=White, FEN=8/pp1r1p2/2p1p2k/3p3p/3P4/P7/KPP3R1/8 w - - 3 44
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r1p2/2p1p2k/3p3p/3P4/P7/KPP3R1/8 w - - 3 44
+Hint for White (direct): a2b3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a2b3, turn=Black, FEN=8/pp1r1p2/2p1p2k/3p3p/3P4/PK6/1PP3R1/8 b - - 4 44
+AI moved: f7f5, turn=White, FEN=8/pp1r4/2p1p2k/3p1p1p/3P4/PK6/1PP3R1/8 w - - 0 45
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+User registered and logged in: username=sidd1, user_id=11
+Saved game to database: game_id=74, user_id=11
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Hint for White (direct): e2e4
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Hint for White (direct): d2d4
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+AI moved: c5d4, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Hint for White (direct): f3d4
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: f3d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+AI moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Hint for White (direct): b1c3
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: b1c3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5
+AI moved: e7e6, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Hint for White (direct): d4c6
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: d4c6, turn=Black, FEN=r1bqkb1r/pp1p1ppp/2N1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 6
+AI moved: b7c6, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 7
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Retrieved 1 games for user_id=11
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 7
+Hint for White (direct): e4e5
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: e4e5, turn=Black, FEN=r1bqkb1r/p2p1ppp/2p1pn2/4P3/8/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 7
+AI moved: f6d5, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1p3/3nP3/8/2N5/PPP2PPP/R1BQKB1R w KQkq - 1 8
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1p3/3nP3/8/2N5/PPP2PPP/R1BQKB1R w KQkq - 1 8
+Hint for White (direct): c3e4
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: c3e4, turn=Black, FEN=r1bqkb1r/p2p1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R b KQkq - 2 8
+AI moved: d8c7, turn=White, FEN=r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R w KQkq - 3 9
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R w KQkq - 3 9
+Hint for White (direct): f2f4
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: f2f4, turn=Black, FEN=r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4NP2/8/PPP3PP/R1BQKB1R b KQkq - 0 9
+AI moved: c7b6, turn=White, FEN=r1b1kb1r/p2p1ppp/1qp1p3/3nP3/4NP2/8/PPP3PP/R1BQKB1R w KQkq - 1 10
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1kb1r/p2p1ppp/1qp1p3/3nP3/4NP2/8/PPP3PP/R1BQKB1R w KQkq - 1 10
+Hint for White (direct): c2c4
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: c2c4, turn=Black, FEN=r1b1kb1r/p2p1ppp/1qp1p3/3nP3/2P1NP2/8/PP4PP/R1BQKB1R b KQkq - 0 10
+AI moved: f8b4, turn=White, FEN=r1b1k2r/p2p1ppp/1qp1p3/3nP3/1bP1NP2/8/PP4PP/R1BQKB1R w KQkq - 1 11
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Saved game to database: game_id=74, user_id=11
+Cleaned up old games
+Retrieved 1 games for user_id=11
+Loaded game from database: game_id=74, user_id=11
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=75, user_id=11
+Saved game to database: game_id=75, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=75, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=75, user_id=11
+Saved game to database: game_id=75, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=75, user_id=11
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=75, user_id=11
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Saved game to database: game_id=75, user_id=11
+Saved game to database: game_id=75, user_id=11
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=75, user_id=11
+Saved game to database: game_id=75, user_id=11
+User logged out: user_id=11
+Loaded game from database: game_id=73, user_id=10
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g2g4, turn=Black, FEN=8/pp1r4/2p1p2k/3p1p1p/3P2R1/PK6/1PP5/8 b - - 1 45
+AI moved: h5g4, turn=White, FEN=8/pp1r4/2p1p2k/3p1p2/3P2p1/PK6/1PP5/8 w - - 0 46
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r4/2p1p2k/3p1p2/3P2p1/PK6/1PP5/8 w - - 0 46
+Hint for White (direct): b3b4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b3b4, turn=Black, FEN=8/pp1r4/2p1p2k/3p1p2/1K1P2p1/P7/1PP5/8 b - - 1 46
+AI moved: g4g3, turn=White, FEN=8/pp1r4/2p1p2k/3p1p2/1K1P4/P5p1/1PP5/8 w - - 0 47
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r4/2p1p2k/3p1p2/1K1P4/P5p1/1PP5/8 w - - 0 47
+Hint for White (direct): a3a4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a3a4, turn=Black, FEN=8/pp1r4/2p1p2k/3p1p2/PK1P4/6p1/1PP5/8 b - - 0 47
+AI moved: g3g2, turn=White, FEN=8/pp1r4/2p1p2k/3p1p2/PK1P4/8/1PP3p1/8 w - - 0 48
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r4/2p1p2k/3p1p2/PK1P4/8/1PP3p1/8 w - - 0 48
+Hint for White (direct): a4a5
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a4a5, turn=Black, FEN=8/pp1r4/2p1p2k/P2p1p2/1K1P4/8/1PP3p1/8 b - - 0 48
+AI moved: g2g1q, turn=White, FEN=8/pp1r4/2p1p2k/P2p1p2/1K1P4/8/1PP5/6q1 w - - 0 49
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pp1r4/2p1p2k/P2p1p2/1K1P4/8/1PP5/6q1 w - - 0 49
+Hint for White (direct): a5a6
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a5a6, turn=Black, FEN=8/pp1r4/P1p1p2k/3p1p2/1K1P4/8/1PP5/6q1 b - - 0 49
+AI moved: b7a6, turn=White, FEN=8/p2r4/p1p1p2k/3p1p2/1K1P4/8/1PP5/6q1 w - - 0 50
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/p2r4/p1p1p2k/3p1p2/1K1P4/8/1PP5/6q1 w - - 0 50
+Hint for White (direct): b4b3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b4b3, turn=Black, FEN=8/p2r4/p1p1p2k/3p1p2/3P4/1K6/1PP5/6q1 b - - 1 50
+AI moved: d7b7, turn=White, FEN=8/pr6/p1p1p2k/3p1p2/3P4/1K6/1PP5/6q1 w - - 2 51
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pr6/p1p1p2k/3p1p2/3P4/1K6/1PP5/6q1 w - - 2 51
+Hint for White (direct): b3a2
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b3a2, turn=Black, FEN=8/pr6/p1p1p2k/3p1p2/3P4/8/KPP5/6q1 b - - 3 51
+AI moved: g1d1, turn=White, FEN=8/pr6/p1p1p2k/3p1p2/3P4/8/KPP5/3q4 w - - 4 52
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pr6/p1p1p2k/3p1p2/3P4/8/KPP5/3q4 w - - 4 52
+Hint for White (direct): b2b3
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b2b3, turn=Black, FEN=8/pr6/p1p1p2k/3p1p2/3P4/1P6/K1P5/3q4 b - - 0 52
+AI moved: d1c2, turn=White, FEN=8/pr6/p1p1p2k/3p1p2/3P4/1P6/K1q5/8 w - - 0 53
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/pr6/p1p1p2k/3p1p2/3P4/1P6/K1q5/8 w - - 0 53
+Hint for White (direct): a2a1
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a2a1, turn=Black, FEN=8/pr6/p1p1p2k/3p1p2/3P4/1P6/2q5/K7 b - - 1 53
+AI moved: b7g7, turn=White, FEN=8/p5r1/p1p1p2k/3p1p2/3P4/1P6/2q5/K7 w - - 2 54
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=8/p5r1/p1p1p2k/3p1p2/3P4/1P6/2q5/K7 w - - 2 54
+Hint for White (direct): b3b4
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b3b4, turn=Black, FEN=8/p5r1/p1p1p2k/3p1p2/1P1P4/8/2q5/K7 b - - 0 54
+AI moved: g7g1, turn=White, FEN=8/p7/p1p1p2k/3p1p2/1P1P4/8/2q5/K5r1 w - - 1 55
+Saved game to database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish difficulty set to Medium (Skill Level: 10)
+Reset: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Saved game to database: game_id=76, user_id=10
+Saved game to database: game_id=76, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Retrieved 8 games for user_id=10
+Loaded game from database: game_id=76, user_id=10
+Loaded game from database: game_id=73, user_id=10
+Saved game to database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=73, user_id=10
+Loaded game from database: game_id=73, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Retrieved 8 games for user_id=10
+Loaded game from database: game_id=73, user_id=10
+Loaded game from database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/pp2ppbp/2n2np1/2p5/3p1P2/3P1NP1/PPP1P1BP/RNB1QRK1 w kq - 0 8
+Hint for White (direct): a2a4
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a2a4, turn=Black, FEN=r1bqk2r/pp2ppbp/2n2np1/2p5/P2p1P2/3P1NP1/1PP1P1BP/RNB1QRK1 b kq - 0 8
+AI moved: a8b8, turn=White, FEN=1rbqk2r/pp2ppbp/2n2np1/2p5/P2p1P2/3P1NP1/1PP1P1BP/RNB1QRK1 w k - 1 9
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=1rbqk2r/pp2ppbp/2n2np1/2p5/P2p1P2/3P1NP1/1PP1P1BP/RNB1QRK1 w k - 1 9
+Hint for White (direct): b1a3
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b1a3, turn=Black, FEN=1rbqk2r/pp2ppbp/2n2np1/2p5/P2p1P2/N2P1NP1/1PP1P1BP/R1B1QRK1 b k - 2 9
+AI moved: e8g8, turn=White, FEN=1rbq1rk1/pp2ppbp/2n2np1/2p5/P2p1P2/N2P1NP1/1PP1P1BP/R1B1QRK1 w - - 3 10
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=1rbq1rk1/pp2ppbp/2n2np1/2p5/P2p1P2/N2P1NP1/1PP1P1BP/R1B1QRK1 w - - 3 10
+Hint for White (direct): c1d2
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c1d2, turn=Black, FEN=1rbq1rk1/pp2ppbp/2n2np1/2p5/P2p1P2/N2P1NP1/1PPBP1BP/R3QRK1 b - - 4 10
+AI moved: b7b6, turn=White, FEN=1rbq1rk1/p3ppbp/1pn2np1/2p5/P2p1P2/N2P1NP1/1PPBP1BP/R3QRK1 w - - 0 11
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=1rbq1rk1/p3ppbp/1pn2np1/2p5/P2p1P2/N2P1NP1/1PPBP1BP/R3QRK1 w - - 0 11
+Hint for White (direct): h2h3
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: h2h3, turn=Black, FEN=1rbq1rk1/p3ppbp/1pn2np1/2p5/P2p1P2/N2P1NPP/1PPBP1B1/R3QRK1 b - - 0 11
+AI moved: f6d5, turn=White, FEN=1rbq1rk1/p3ppbp/1pn3p1/2pn4/P2p1P2/N2P1NPP/1PPBP1B1/R3QRK1 w - - 1 12
+Saved game to database: game_id=68, user_id=10
+Saved game to database: game_id=68, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=1rbq1rk1/p3ppbp/1pn3p1/2pn4/P2p1P2/N2P1NPP/1PPBP1B1/R3QRK1 w - - 1 12
+Hint for White (direct): a3c4
+Stockfish engine closed
+Loaded game from database: game_id=68, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=1rbq1rk1/p3ppbp/1pn3p1/2pn4/P2p1P2/N2P1NPP/1PPBP1B1/R3QRK1 w - - 1 12
+Hint for White (direct): a3c4
+Stockfish engine closed
+User logged in: username=choti elaichi
+Saved game to database: game_id=77, user_id=10
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Hint for White (direct): e2e4
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Hint for White (direct): d2d4
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+AI moved: c5d4, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Hint for White (direct): f3d4
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f3d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+AI moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Hint for White (direct): b1c3
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b1c3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5
+AI moved: e7e6, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1p1ppp/2n1pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Hint for White (direct): d4c6
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d4c6, turn=Black, FEN=r1bqkb1r/pp1p1ppp/2N1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 6
+AI moved: b7c6, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 7
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 7
+Hint for White (direct): e4e5
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e4e5, turn=Black, FEN=r1bqkb1r/p2p1ppp/2p1pn2/4P3/8/2N5/PPP2PPP/R1BQKB1R b KQkq - 0 7
+AI moved: f6d5, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1p3/3nP3/8/2N5/PPP2PPP/R1BQKB1R w KQkq - 1 8
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/p2p1ppp/2p1p3/3nP3/8/2N5/PPP2PPP/R1BQKB1R w KQkq - 1 8
+Hint for White (direct): c3e4
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c3e4, turn=Black, FEN=r1bqkb1r/p2p1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R b KQkq - 2 8
+AI moved: d8c7, turn=White, FEN=r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R w KQkq - 3 9
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R w KQkq - 3 9
+Hint for White (direct): f2f4
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f2f4, turn=Black, FEN=r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4NP2/8/PPP3PP/R1BQKB1R b KQkq - 0 9
+AI moved: c7b6, turn=White, FEN=r1b1kb1r/p2p1ppp/1qp1p3/3nP3/4NP2/8/PPP3PP/R1BQKB1R w KQkq - 1 10
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Retrieved 9 games for user_id=10
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1kb1r/p2p1ppp/1qp1p3/3nP3/4NP2/8/PPP3PP/R1BQKB1R w KQkq - 1 10
+Hint for White (direct): c2c4
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c2c4, turn=Black, FEN=r1b1kb1r/p2p1ppp/1qp1p3/3nP3/2P1NP2/8/PP4PP/R1BQKB1R b KQkq - 0 10
+AI moved: f8b4, turn=White, FEN=r1b1k2r/p2p1ppp/1qp1p3/3nP3/1bP1NP2/8/PP4PP/R1BQKB1R w KQkq - 1 11
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1k2r/p2p1ppp/1qp1p3/3nP3/1bP1NP2/8/PP4PP/R1BQKB1R w KQkq - 1 11
+Hint for White (direct): e1e2
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1e2, turn=Black, FEN=r1b1k2r/p2p1ppp/1qp1p3/3nP3/1bP1NP2/8/PP2K1PP/R1BQ1B1R b kq - 2 11
+AI moved: f7f5, turn=White, FEN=r1b1k2r/p2p2pp/1qp1p3/3nPp2/1bP1NP2/8/PP2K1PP/R1BQ1B1R w kq f6 0 12
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1k2r/p2p2pp/1qp1p3/3nPp2/1bP1NP2/8/PP2K1PP/R1BQ1B1R w kq f6 0 12
+Hint for White (direct): e5f6
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e5f6, turn=Black, FEN=r1b1k2r/p2p2pp/1qp1pP2/3n4/1bP1NP2/8/PP2K1PP/R1BQ1B1R b kq - 0 12
+AI moved: d5f6, turn=White, FEN=r1b1k2r/p2p2pp/1qp1pn2/8/1bP1NP2/8/PP2K1PP/R1BQ1B1R w kq - 0 13
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1b1k2r/p2p2pp/1qp1pn2/8/1bP1NP2/8/PP2K1PP/R1BQ1B1R w kq - 0 13
+Hint for White (direct): c1e3
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c1e3, turn=Black, FEN=r1b1k2r/p2p2pp/1qp1pn2/8/1bP1NP2/4B3/PP2K1PP/R2Q1B1R b kq - 1 13
+AI moved: b6d8, turn=White, FEN=r1bqk2r/p2p2pp/2p1pn2/8/1bP1NP2/4B3/PP2K1PP/R2Q1B1R w kq - 2 14
+Saved game to database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=77, user_id=10
+Saved game to database: game_id=77, user_id=10
+User logged out: user_id=10
+User logged in: username=choti elaichi
+Saved game to database: game_id=78, user_id=10
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Hint for White (direct): e2e4
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e2e4, turn=Black, FEN=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+AI moved: c7c5, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+Hint for White (direct): g1f3
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g1f3, turn=Black, FEN=rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+AI moved: b8c6, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+Hint for White (direct): d2d4
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d2d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+AI moved: c5d4, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4
+Hint for White (direct): f3d4
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f3d4, turn=Black, FEN=r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+AI moved: g8f6, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+Hint for White (direct): b1c3
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: b1c3, turn=Black, FEN=r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5
+AI moved: g7g6, turn=White, FEN=r1bqkb1r/pp1ppp1p/2n2np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqkb1r/pp1ppp1p/2n2np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6
+Hint for White (direct): f1c4
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f1c4, turn=Black, FEN=r1bqkb1r/pp1ppp1p/2n2np1/8/2BNP3/2N5/PPP2PPP/R1BQK2R b KQkq - 1 6
+AI moved: f8g7, turn=White, FEN=r1bqk2r/pp1pppbp/2n2np1/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq - 2 7
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/pp1pppbp/2n2np1/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQkq - 2 7
+Hint for White (direct): d4c6
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d4c6, turn=Black, FEN=r1bqk2r/pp1pppbp/2N2np1/8/2B1P3/2N5/PPP2PPP/R1BQK2R b KQkq - 0 7
+AI moved: b7c6, turn=White, FEN=r1bqk2r/p2pppbp/2p2np1/8/2B1P3/2N5/PPP2PPP/R1BQK2R w KQkq - 0 8
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/p2pppbp/2p2np1/8/2B1P3/2N5/PPP2PPP/R1BQK2R w KQkq - 0 8
+Hint for White (direct): e4e5
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e4e5, turn=Black, FEN=r1bqk2r/p2pppbp/2p2np1/4P3/2B5/2N5/PPP2PPP/R1BQK2R b KQkq - 0 8
+AI moved: f6g4, turn=White, FEN=r1bqk2r/p2pppbp/2p3p1/4P3/2B3n1/2N5/PPP2PPP/R1BQK2R w KQkq - 1 9
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/p2pppbp/2p3p1/4P3/2B3n1/2N5/PPP2PPP/R1BQK2R w KQkq - 1 9
+Hint for White (direct): d1g4
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d1g4, turn=Black, FEN=r1bqk2r/p2pppbp/2p3p1/4P3/2B3Q1/2N5/PPP2PPP/R1B1K2R b KQkq - 0 9
+AI moved: d7d5, turn=White, FEN=r1bqk2r/p3ppbp/2p3p1/3pP3/2B3Q1/2N5/PPP2PPP/R1B1K2R w KQkq d6 0 10
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/p3ppbp/2p3p1/3pP3/2B3Q1/2N5/PPP2PPP/R1B1K2R w KQkq d6 0 10
+Hint for White (direct): g4f3
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: g4f3, turn=Black, FEN=r1bqk2r/p3ppbp/2p3p1/3pP3/2B5/2N2Q2/PPP2PPP/R1B1K2R b KQkq - 1 10
+AI moved: d5c4, turn=White, FEN=r1bqk2r/p3ppbp/2p3p1/4P3/2p5/2N2Q2/PPP2PPP/R1B1K2R w KQkq - 0 11
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r1bqk2r/p3ppbp/2p3p1/4P3/2p5/2N2Q2/PPP2PPP/R1B1K2R w KQkq - 0 11
+Hint for White (direct): f3c6
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f3c6, turn=Black, FEN=r1bqk2r/p3ppbp/2Q3p1/4P3/2p5/2N5/PPP2PPP/R1B1K2R b KQkq - 0 11
+AI moved: c8d7, turn=White, FEN=r2qk2r/p2bppbp/2Q3p1/4P3/2p5/2N5/PPP2PPP/R1B1K2R w KQkq - 1 12
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2qk2r/p2bppbp/2Q3p1/4P3/2p5/2N5/PPP2PPP/R1B1K2R w KQkq - 1 12
+Hint for White (direct): c6f3
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c6f3, turn=Black, FEN=r2qk2r/p2bppbp/6p1/4P3/2p5/2N2Q2/PPP2PPP/R1B1K2R b KQkq - 2 12
+AI moved: e8g8, turn=White, FEN=r2q1rk1/p2bppbp/6p1/4P3/2p5/2N2Q2/PPP2PPP/R1B1K2R w KQ - 3 13
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2q1rk1/p2bppbp/6p1/4P3/2p5/2N2Q2/PPP2PPP/R1B1K2R w KQ - 3 13
+Hint for White (direct): e1g1
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: e1g1, turn=Black, FEN=r2q1rk1/p2bppbp/6p1/4P3/2p5/2N2Q2/PPP2PPP/R1B2RK1 b - - 4 13
+AI moved: g7e5, turn=White, FEN=r2q1rk1/p2bpp1p/6p1/4b3/2p5/2N2Q2/PPP2PPP/R1B2RK1 w - - 0 14
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2q1rk1/p2bpp1p/6p1/4b3/2p5/2N2Q2/PPP2PPP/R1B2RK1 w - - 0 14
+Hint for White (direct): f1e1
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: f1e1, turn=Black, FEN=r2q1rk1/p2bpp1p/6p1/4b3/2p5/2N2Q2/PPP2PPP/R1B1R1K1 b - - 1 14
+AI moved: e5g7, turn=White, FEN=r2q1rk1/p2bppbp/6p1/8/2p5/2N2Q2/PPP2PPP/R1B1R1K1 w - - 2 15
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2q1rk1/p2bppbp/6p1/8/2p5/2N2Q2/PPP2PPP/R1B1R1K1 w - - 2 15
+Hint for White (direct): c1g5
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c1g5, turn=Black, FEN=r2q1rk1/p2bppbp/6p1/6B1/2p5/2N2Q2/PPP2PPP/R3R1K1 b - - 3 15
+AI moved: d7e6, turn=White, FEN=r2q1rk1/p3ppbp/4b1p1/6B1/2p5/2N2Q2/PPP2PPP/R3R1K1 w - - 4 16
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r2q1rk1/p3ppbp/4b1p1/6B1/2p5/2N2Q2/PPP2PPP/R3R1K1 w - - 4 16
+Hint for White (direct): a1d1
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: a1d1, turn=Black, FEN=r2q1rk1/p3ppbp/4b1p1/6B1/2p5/2N2Q2/PPP2PPP/3RR1K1 b - - 5 16
+AI moved: d8c7, turn=White, FEN=r4rk1/p1q1ppbp/4b1p1/6B1/2p5/2N2Q2/PPP2PPP/3RR1K1 w - - 6 17
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r4rk1/p1q1ppbp/4b1p1/6B1/2p5/2N2Q2/PPP2PPP/3RR1K1 w - - 6 17
+Hint for White (direct): c3d5
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: c3d5, turn=Black, FEN=r4rk1/p1q1ppbp/4b1p1/3N2B1/2p5/5Q2/PPP2PPP/3RR1K1 b - - 7 17
+AI moved: e6d5, turn=White, FEN=r4rk1/p1q1ppbp/6p1/3b2B1/2p5/5Q2/PPP2PPP/3RR1K1 w - - 0 18
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r4rk1/p1q1ppbp/6p1/3b2B1/2p5/5Q2/PPP2PPP/3RR1K1 w - - 0 18
+Hint for White (direct): d1d5
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d1d5, turn=Black, FEN=r4rk1/p1q1ppbp/6p1/3R2B1/2p5/5Q2/PPP2PPP/4R1K1 b - - 0 18
+AI moved: e7e6, turn=White, FEN=r4rk1/p1q2pbp/4p1p1/3R2B1/2p5/5Q2/PPP2PPP/4R1K1 w - - 0 19
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Hint requested: player_color=White, turn=White, FEN=r4rk1/p1q2pbp/4p1p1/3R2B1/2p5/5Q2/PPP2PPP/4R1K1 w - - 0 19
+Hint for White (direct): d5d1
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Stockfish initialized from ./stockfish.exe
+Player moved: d5d1, turn=Black, FEN=r4rk1/p1q2pbp/4p1p1/6B1/2p5/5Q2/PPP2PPP/3RR1K1 b - - 1 19
+AI moved: h7h6, turn=White, FEN=r4rk1/p1q2pb1/4p1pp/6B1/2p5/5Q2/PPP2PPP/3RR1K1 w - - 0 20
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Stockfish engine closed
+Loaded game from database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+Cleaned up old games
+Loaded game from database: game_id=78, user_id=10
+Saved game to database: game_id=78, user_id=10
+User logged out: user_id=10
+User logged in: username=choti elaichi
+Saved game to database: game_id=79, user_id=10
+Loaded game from database: game_id=79, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=79, user_id=10
+Loaded game from database: game_id=79, user_id=10
+Stockfish initialized from ./stockfish.exe
+Stockfish engine closed
+Loaded game from database: game_id=79, user_id=10
+Saved game to database: game_id=79, user_id=10
+User logged out: user_id=10
