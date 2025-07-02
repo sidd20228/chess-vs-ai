@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         .glass {
             background: rgba(38, 36, 43, 0.85);
@@ -64,11 +65,16 @@
 
         /* Ensure the body and containers allow scrolling */
         body {
-            background: linear-gradient(135deg, #1a1a1a, #2d2d2d) !important;
+            background: linear-gradient(120deg, #e0e7ef 0%, #f5f7fa 100%);
             color: #ffffff;
             min-height: 100vh;
             overflow-y: auto !important;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', Arial, sans-serif;
+            animation: gradientBG 12s ease-in-out infinite alternate;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
 
         #game-container {
@@ -92,7 +98,7 @@
         /* Modern layout adjustments */
         .game-layout {
             display: grid;
-            grid-template-columns: auto 300px;
+            grid-template-columns: auto 400px;
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
@@ -129,10 +135,8 @@
         }
 
         .control-panel {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            width: 100%;
+            width: 400px;
+            max-width: 100%;
         }
 
         .controls {
@@ -335,6 +339,501 @@
         body.dark #username-display {
             color: #e5e7eb;  /* Light gray color for dark mode */
         }
+
+        .glass-apple {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            outline: 1px solid rgba(255,255,255,0.08);
+        }
+        .dark .glass-apple {
+            background: rgba(30, 41, 59, 0.25);
+            color: #fff;
+            border: 1.5px solid rgba(255,255,255,0.12);
+            outline: 1px solid rgba(255,255,255,0.04);
+        }
+        .timer-glass {
+            background: rgba(255,255,255,0.45);
+            color: #222;
+            border-radius: 16px;
+            padding: 0.5rem 2.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.10);
+            border: 1.5px solid rgba(255,255,255,0.25);
+            letter-spacing: 0.05em;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.25);
+            margin: 0 0.5rem;
+        }
+        .timer-glass-dark {
+            background: rgba(30,32,40,0.55);
+            color: #fff;
+            border-radius: 16px;
+            padding: 0.5rem 2.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.10);
+            border: 1.5px solid rgba(255,255,255,0.10);
+            letter-spacing: 0.05em;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+            margin: 0 0.5rem;
+        }
+        .glass-select, .glass-btn {
+            background: rgba(255,255,255,0.35);
+            border: 1.5px solid rgba(255,255,255,0.25);
+            border-radius: 14px;
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #222;
+            font-weight: 500;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .glass-btn:hover, .glass-select:focus {
+            background: rgba(255,255,255,0.55);
+            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.12);
+        }
+        .glass-btn:active {
+            background: rgba(255,255,255,0.25);
+        }
+        .compact-control {
+            min-height: 2.2rem !important;
+            height: 2.2rem !important;
+            max-width: 90px;
+            font-size: 1rem;
+            padding: 0.25rem 0.75rem !important;
+            border-radius: 10px !important;
+            margin-right: 0.5rem;
+        }
+        .compact-control:last-child {
+            margin-right: 0;
+        }
+        .compact-row {
+            gap: 0.5rem !important;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .compact-control { max-width: 100%; font-size: 0.95rem; }
+        }
+        .aesthetic-card {
+            background: rgba(255,255,255,0.18);
+            border-radius: 16px;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.08);
+            backdrop-filter: blur(10px) saturate(160%);
+            -webkit-backdrop-filter: blur(10px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 0.5rem 0.75rem 0.75rem 0.75rem;
+            margin-right: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: box-shadow 0.2s, background 0.2s;
+            min-width: 90px;
+            max-width: 110px;
+        }
+        .aesthetic-card:last-child { margin-right: 0; }
+        .aesthetic-card:hover, .aesthetic-card:focus-within {
+            background: rgba(255,255,255,0.28);
+            box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.14);
+        }
+        .aesthetic-label {
+            font-size: 0.8rem;
+            color: #4f8cff;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.03em;
+            display: flex;
+            align-items: center;
+            gap: 0.25em;
+        }
+        .aesthetic-row {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .aesthetic-icon {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.2em;
+        }
+        @media (max-width: 900px) {
+            .game-layout {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+            }
+            .control-panel {
+                width: 100%;
+                max-width: 100%;
+            }
+            .aesthetic-row {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+        }
+        @media (max-width: 600px) {
+            .aesthetic-row {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            .aesthetic-card {
+                width: 100%;
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+        .premium-glass-card {
+            background: rgba(255,255,255,0.22);
+            border-radius: 28px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 8px 0 rgba(80, 80, 120, 0.08);
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            border: 1.5px solid rgba(255,255,255,0.28);
+            transition: box-shadow 0.2s, background 0.2s;
+        }
+        .premium-glass-card.lifted {
+            box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.22), 0 2px 12px 0 rgba(80, 80, 120, 0.10);
+        }
+        .premium-board-bg {
+            background: linear-gradient(135deg, #e3e9f7 0%, #dbeafe 100%);
+            border-radius: 20px;
+            box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.10);
+            padding: 1.5rem;
+            position: relative;
+        }
+        .premium-divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #e0e7ef 0%, #c7d2fe 100%);
+            opacity: 0.5;
+            border-radius: 1px;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .premium-move-list {
+            background: rgba(255,255,255,0.18);
+            border-radius: 18px;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.08);
+            padding: 1.5rem 1rem 1rem 1rem;
+            font-family: 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', Arial, sans-serif;
+            font-size: 1.08rem;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 1.5rem;
+        }
+        .premium-move-list ul { list-style: none; padding: 0; margin: 0; }
+        .premium-move-list li {
+            display: flex;
+            align-items: center;
+            padding: 0.4rem 0.2rem;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .premium-move-list li:nth-child(even) { background: rgba(200,220,255,0.10); }
+        .premium-move-list li.latest-move { background: #4f8cff22; font-weight: 600; color: #2563eb; }
+        .premium-move-list .move-number { width: 2.2em; text-align: right; font-weight: 600; color: #64748b; }
+        .premium-move-list .move-white, .premium-move-list .move-black { flex: 1; text-align: center; }
+        .premium-move-list .move-black { color: #334155; }
+        .premium-move-list .move-white { color: #0f172a; }
+        .premium-btn, .premium-select {
+            background: rgba(255,255,255,0.35);
+            border: 1.5px solid rgba(255,255,255,0.25);
+            border-radius: 14px;
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #222;
+            font-weight: 500;
+            transition: background 0.2s, box-shadow 0.2s, border 0.2s;
+            font-size: 1.08rem;
+            padding: 0.5rem 1.1rem;
+            min-height: 2.2rem;
+            margin-bottom: 0.2rem;
+        }
+        .premium-btn:hover, .premium-select:focus {
+            background: rgba(255,255,255,0.55);
+            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.12);
+            border: 1.5px solid #4f8cff;
+        }
+        .premium-btn:active {
+            background: rgba(255,255,255,0.25);
+        }
+        .premium-label {
+            font-size: 0.85rem;
+            color: #4f8cff;
+            font-weight: 600;
+            margin-bottom: 0.18rem;
+            letter-spacing: 0.03em;
+            display: flex;
+            align-items: center;
+            gap: 0.25em;
+        }
+        .premium-icon {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.2em;
+        }
+        .premium-row {
+            display: flex;
+            gap: 1.1rem;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 900px) {
+            .premium-row {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+        }
+        @media (max-width: 600px) {
+            .premium-row {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            .premium-move-list {
+                max-height: 160px;
+                font-size: 0.98rem;
+                width: 100%;
+                min-width: 0;
+            }
+            .premium-btn, .premium-select {
+                width: 100%;
+                min-width: 0;
+                font-size: 1.05rem;
+                padding: 0.7rem 0.5rem;
+            }
+        }
+        .glass-row-panel {
+            background: rgba(255,255,255,0.18);
+            border-radius: 16px;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.08);
+            backdrop-filter: blur(10px) saturate(160%);
+            -webkit-backdrop-filter: blur(10px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        .glass-row-panel .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 80px;
+            max-width: 110px;
+        }
+        .glass-row-panel .control-label {
+            font-size: 0.78rem;
+            color: #4f8cff;
+            font-weight: 500;
+            margin-bottom: 0.18rem;
+            letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.18em;
+        }
+        .glass-row-panel .control-icon {
+            width: 0.95em;
+            height: 0.95em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.15em;
+        }
+        .glass-row-panel select, .glass-row-panel button {
+            background: rgba(255,255,255,0.35);
+            border: 1.2px solid rgba(255,255,255,0.18);
+            border-radius: 10px;
+            box-shadow: 0 1px 4px 0 rgba(31, 38, 135, 0.06);
+            color: #222;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.35rem 0.9rem;
+            min-height: 2rem;
+            margin-bottom: 0.1rem;
+            transition: background 0.18s, box-shadow 0.18s, border 0.18s;
+        }
+        .glass-row-panel select:focus, .glass-row-panel button:focus {
+            outline: none;
+            border: 1.2px solid #4f8cff;
+            background: rgba(255,255,255,0.55);
+        }
+        .glass-row-panel button {
+            cursor: pointer;
+        }
+        @media (max-width: 900px) {
+            .glass-row-panel {
+                flex-wrap: wrap;
+                gap: 0.7rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .glass-row-panel {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+            .glass-row-panel .control-group {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .segmented-control-row {
+            display: flex;
+            align-items: stretch;
+            background: rgba(255,255,255,0.22);
+            border-radius: 16px;
+            box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.08);
+            border: 1.5px solid rgba(200,200,255,0.18);
+            overflow: hidden;
+            margin-bottom: 1.2rem;
+            justify-content: center;
+            gap: 0;
+        }
+        .segmented-control-row select, .segmented-control-row button {
+            border: none;
+            background: transparent;
+            font-size: 1.08rem;
+            font-weight: 500;
+            color: #222;
+            padding: 0.6rem 1.2rem;
+            min-width: 90px;
+            text-align: center;
+            outline: none;
+            transition: background 0.18s, color 0.18s;
+            border-right: 1px solid rgba(180,180,220,0.18);
+            border-radius: 0;
+        }
+        .segmented-control-row select:last-child, .segmented-control-row button:last-child {
+            border-right: none;
+        }
+        .segmented-control-row select:focus, .segmented-control-row button:focus {
+            background: rgba(79,140,255,0.10);
+            color: #2563eb;
+        }
+        .segmented-control-row button {
+            cursor: pointer;
+            background: transparent;
+        }
+        .segmented-control-row button.active, .segmented-control-row select:active {
+            background: rgba(79,140,255,0.13);
+            color: #2563eb;
+        }
+        @media (max-width: 900px) {
+            .segmented-control-row {
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 600px) {
+            .segmented-control-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .segmented-control-row select, .segmented-control-row button {
+                border-right: none;
+                border-bottom: 1px solid rgba(180,180,220,0.18);
+                border-radius: 0;
+            }
+            .segmented-control-row select:last-child, .segmented-control-row button:last-child {
+                border-bottom: none;
+            }
+        }
+        .chesscom-control-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 1.2rem;
+            background: none;
+            margin-bottom: 1.2rem;
+            padding: 0;
+        }
+        .chesscom-control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-width: 90px;
+            max-width: 120px;
+        }
+        .chesscom-control-label {
+            font-size: 0.92rem;
+            color: #222;
+            font-weight: 700;
+            margin-bottom: 0.18rem;
+            letter-spacing: 0.01em;
+        }
+        .chesscom-control-row select, .chesscom-control-row button {
+            border: 1px solid #d1d5db;
+            background: #f3f4f6;
+            color: #222;
+            font-size: 1.08rem;
+            font-weight: 500;
+            padding: 0.45rem 1.1rem;
+            border-radius: 8px;
+            min-height: 2.2rem;
+            margin-bottom: 0.1rem;
+            transition: border 0.18s, box-shadow 0.18s;
+        }
+        .chesscom-control-row select:focus, .chesscom-control-row button:focus {
+            outline: none;
+            border: 1px solid #4f8cff;
+            box-shadow: 0 0 0 2px #c7d2fe;
+        }
+        .chesscom-control-row button {
+            cursor: pointer;
+            background: #f3f4f6;
+        }
+        @media (max-width: 900px) {
+            .chesscom-control-row {
+                flex-wrap: wrap;
+                gap: 0.7rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .chesscom-control-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .chesscom-control-group {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            position: relative;
+            overflow: hidden;
+        }
+        .glassmorphism::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+            pointer-events: none;
+        }
+        .glassmorphism::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 1px; height: 100%;
+            background: linear-gradient(180deg, rgba(255,255,255,0.8), transparent, rgba(255,255,255,0.3));
+            pointer-events: none;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen">
@@ -356,10 +855,15 @@
         </div>
 
         <div id="game-container" class="hidden game-layout">
-            <div class="board-section">
-                <div class="relative w-full aspect-square max-w-[min(90vw,90vh)] max-w-md md:max-w-lg lg:max-w-2xl mx-auto">
+            <div class="board-section premium-glass-card lifted">
+                <div class="premium-board-bg">
+                    <!-- Timer display -->
+                    <div class="absolute top-2 left-1/2 -translate-x-1/2 flex space-x-8 z-30">
+                        <div id="white-timer" class="timer-glass">05:00</div>
+                        <div id="black-timer" class="timer-glass">05:00</div>
+                    </div>
                     <div id="board" class="w-full h-full" role="grid" aria-label="Chessboard"></div>
-                    <svg id="hint-arrow" class="absolute inset-0 w-full h-full pointer-events-none hidden">
+                    <svg id="hint-arrow" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;pointer-events:none;" class="pointer-events-none hidden">
                         <defs>
                             <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
                                 <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
@@ -370,55 +874,80 @@
                 </div>
             </div>
             
-            <div class="control-panel">
-                <div class="move-list">
-                    <div class="max-h-full overflow-y-auto">
-                        <ul id="move-history" class="list-none"></ul>
-                    </div>
+            <div class="control-panel glass-apple">
+                <div class="premium-move-list glassmorphism">
+                    <ul id="move-history"></ul>
                 </div>
-                
-                <div class="controls space-y-2">
-                    <div class="flex space-x-3">
-                        <select id="difficulty" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Select difficulty">
+                <div class="premium-divider"></div>
+                <div class="premium-row">
+                    <div class="flex flex-col items-center" style="min-width:90px;max-width:120px;">
+                        <span class="premium-label">
+                            <svg class="premium-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            Difficulty
+                        </span>
+                        <select id="difficulty" class="premium-select" aria-label="Select difficulty">
                             <option value="Easy">Easy</option>
                             <option value="Medium" selected>Medium</option>
                             <option value="Hard">Hard</option>
                         </select>
-                        <select id="player-color" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Select player color">
+                    </div>
+                    <div class="flex flex-col items-center" style="min-width:90px;max-width:120px;">
+                        <span class="premium-label">
+                            <svg class="premium-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            Time
+                        </span>
+                        <select id="time-control" class="premium-select" aria-label="Select time control">
+                            <option value="blitz" selected>Blitz (5+0)</option>
+                            <option value="rapid">Rapid (15+0)</option>
+                            <option value="classical">Classical (30+0)</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col items-center" style="min-width:90px;max-width:120px;">
+                        <span class="premium-label">
+                            <svg class="premium-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M4.93 4.93l4.24 4.24"/></svg>
+                            Color
+                        </span>
+                        <select id="player-color" class="premium-select" aria-label="Select player color">
                             <option value="White">White</option>
                             <option value="Black">Black</option>
                         </select>
-                        <button id="interaction-mode" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Toggle interaction mode">
+                    </div>
+                    <div class="flex flex-col items-center" style="min-width:90px;max-width:120px;">
+                        <span class="premium-label">
+                            <svg class="premium-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 8h10M7 12h4m-2 8a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 16v-4"/></svg>
+                            Mode
+                        </span>
+                        <button id="interaction-mode" class="premium-btn" aria-label="Toggle interaction mode">
                             <span id="mode-text">Tap to Move</span>
                         </button>
                     </div>
-                    <button id="reset-button" class="gradient-button p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Reset game">
-                        <span>Reset</span>
-                        <span class="spinner"></span>
-                    </button>
-                    <button id="save-button" class="bg-gradient-to-r from-emerald-500 to-green-600 p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Save game">
-                        <span>Save Game</span>
-                        <span class="spinner"></span>
-                    </button>
-                    <button id="resume-button" class="bg-gradient-to-r from-amber-500 to-yellow-600 p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Resume game">
-                        <span>Resume Game</span>
-                        <span class="spinner"></span>
-                    </button>
-                    <button id="hint-button" class="gradient-button p-3 text-white rounded-lg hover-up shadow-lg flex items-center justify-center" aria-label="Get hint">
-                        <span>Get Hint</span>
-                        <span class="spinner"></span>
-                    </button>
-                    <button id="dark-mode-toggle" class="glass dark:glass-dark p-3 rounded-lg hover-up" aria-label="Toggle dark mode">
-                        <span id="sun" class="hidden">☀️</span>
-                        <span id="moon">🌙</span>
-                    </button>
-                    <div id="status" class="text-xl font-semibold" aria-live="polite"></div>
-                    <div class="w-full glass dark:glass-dark rounded-full h-2">
-                        <div class="probability-fill bg-gradient-to-r from-green-400 to-emerald-500 h-full rounded-full transition-all duration-300"></div>
-                    </div>
-                    <div id="probability" class="text-center">50%</div>
-                    <div id="hint" class="hidden text-center text-blue-500 dark:text-blue-400"></div>
                 </div>
+                <button id="reset-button" class="premium-btn w-full mt-2" aria-label="Reset game">
+                    <span>Reset</span>
+                    <span class="spinner"></span>
+                </button>
+                <button id="save-button" class="premium-btn w-full mt-2" aria-label="Save game">
+                    <span>Save Game</span>
+                    <span class="spinner"></span>
+                </button>
+                <button id="resume-button" class="premium-btn w-full mt-2" aria-label="Resume game">
+                    <span>Resume Game</span>
+                    <span class="spinner"></span>
+                </button>
+                <button id="hint-button" class="premium-btn w-full mt-2" aria-label="Get hint">
+                    <span>Get Hint</span>
+                    <span class="spinner"></span>
+                </button>
+                <button id="dark-mode-toggle" class="premium-btn w-full mt-2" aria-label="Toggle dark mode">
+                    <span id="sun" class="hidden">☀️</span>
+                    <span id="moon">🌙</span>
+                </button>
+                <div id="status" class="text-xl font-semibold mt-2" aria-live="polite"></div>
+                <div class="w-full glass-apple rounded-full h-2 mt-2">
+                    <div class="probability-fill bg-gradient-to-r from-green-400 to-emerald-500 h-full rounded-full transition-all duration-300"></div>
+                </div>
+                <div id="probability" class="text-center">50%</div>
+                <div id="hint" class="hidden text-center text-blue-500 dark:text-blue-400"></div>
             </div>
         </div>
     </div>

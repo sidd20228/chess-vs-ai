@@ -12,6 +12,17 @@ const moveSound = new Audio('/static/move.wav');
 const captureSound = new Audio('/static/capture.wav');
 const checkSound = new Audio('/static/check.wav');
 
+// --- Move navigation state ---
+let fullMoveHistory = [];
+let navMoveIndex = -1; // -1 means latest position
+
+// --- Timer setup ---
+let whiteTime = 300; // default 5 min
+let blackTime = 300;
+let whiteTimerInterval = null;
+let blackTimerInterval = null;
+let activeColor = 'w'; // 'w' or 'b'
+
 function initializeBoard() {
     if (typeof Chessboard === 'undefined') {
         console.error("Chessboard.js not loaded!");
@@ -228,21 +239,58 @@ function squareToCoords(square, boardSize) {
 }
 
 function drawHintArrow(fromSquare, toSquare) {
-    const boardSize = $('#board').width();
+    // Remove any previous hint arrow SVG
+    $('.chessboard-63f37 .hint-arrow-svg').remove();
+    // Find the chess grid
+    const $grid = $('.chessboard-63f37');
+    const gridWidth = $grid.width();
+    const gridHeight = $grid.height();
+    const boardSize = Math.min(gridWidth, gridHeight);
     const from = squareToCoords(fromSquare, boardSize);
     const to = squareToCoords(toSquare, boardSize);
-
-    console.log(`Drawing hint arrow: ${fromSquare} (${from.x}, ${from.y}) to ${toSquare} (${to.x}, ${to.y})`);
-
-    const $arrow = $('#hint-arrow path');
-    const path = `M${from.x},${from.y} L${to.x},${to.y}`;
-    $arrow.attr('d', path);
-    $arrow.attr('marker-end', 'url(#arrowhead)'); // Ensure the marker is applied
-    $('#hint-arrow').removeClass('hidden').attr('class', 'absolute inset-0 w-full h-full pointer-events-none text-red-500 dark:text-red-400');
+    // Create SVG
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('width', gridWidth);
+    svg.setAttribute('height', gridHeight);
+    svg.setAttribute('class', 'hint-arrow-svg');
+    svg.style.position = 'absolute';
+    svg.style.top = '0';
+    svg.style.left = '0';
+    svg.style.width = '100%';
+    svg.style.height = '100%';
+    svg.style.pointerEvents = 'none';
+    svg.style.zIndex = '10';
+    // Marker
+    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+    const marker = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+    marker.setAttribute('id', 'arrowhead');
+    marker.setAttribute('markerWidth', '10');
+    marker.setAttribute('markerHeight', '7');
+    marker.setAttribute('refX', '9');
+    marker.setAttribute('refY', '3.5');
+    marker.setAttribute('orient', 'auto');
+    marker.setAttribute('markerUnits', 'strokeWidth');
+    const polygon = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+    polygon.setAttribute('points', '0 0, 10 3.5, 0 7');
+    polygon.setAttribute('fill', 'red');
+    marker.appendChild(polygon);
+    defs.appendChild(marker);
+    svg.appendChild(defs);
+    // Arrow
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', `M${from.x},${from.y} L${to.x},${to.y}`);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', 'red');
+    path.setAttribute('stroke-width', '4');
+    path.setAttribute('marker-end', 'url(#arrowhead)');
+    svg.appendChild(path);
+    // Append SVG to grid
+    $grid.css('position', 'relative');
+    $grid.append(svg);
 }
 
 function clearHintArrow() {
-    $('#hint-arrow').addClass('hidden');
+    $('.chessboard-63f37 .hint-arrow-svg').remove();
 }
 
 function showToast(message, type = 'success') {
@@ -385,6 +433,23 @@ $(document).ready(function() {
     $('#resume-button').on('click', showResumeModal);
     $('#load-game-button').on('click', resumeGame);
     $('#logout-button').on('click', logout);
+
+    $(document).on('click', '#prev-move', function() {
+        if (navMoveIndex === -1) navMoveIndex = fullMoveHistory.length;
+        if (navMoveIndex > 1) {
+            goToMove(navMoveIndex - 1);
+        }
+    });
+    $(document).on('click', '#next-move', function() {
+        if (navMoveIndex === -1) return; // Already live
+        goToMove(navMoveIndex + 1);
+    });
+
+    setTimeout(() => {
+        if (typeof game !== 'undefined' && game && typeof game.turn === 'function') {
+            startGameWithTimers();
+        }
+    }, 1000);
 });
 
 function fetchFen() {
@@ -513,6 +578,7 @@ function makeServerMove(moveString) {
             updateStatus();
             $('#hint').addClass('hidden');
             clearHintArrow();
+            setTimeout(afterMoveSwitchTimer, 500);
         },
         error: function(xhr, status, error) {
             console.error("Move request failed:", status, error);
@@ -563,12 +629,22 @@ function updateProbability(probability) {
 }
 
 function updateHistory(history) {
+    console.log('updateHistory called with:', history);
     const $historyList = $('#move-history');
     $historyList.empty();
-    for (let i = 0; i < history.length; i += 2) {
+    let tempGame = new Chess();
+    let sanMoves = [];
+    for (let i = 0; i < history.length; i++) {
+        // Convert UCI to SAN for display
+        let move = tempGame.move({ from: history[i].slice(0,2), to: history[i].slice(2,4), promotion: history[i].length > 4 ? history[i][4] : undefined });
+        if (move) {
+            sanMoves.push(move.san);
+        }
+    }
+    for (let i = 0; i < sanMoves.length; i += 2) {
         const moveNumber = Math.floor(i / 2) + 1;
-        const whiteMove = history[i];
-        const blackMove = history[i + 1] || "";
+        const whiteMove = sanMoves[i] || "";
+        const blackMove = sanMoves[i + 1] || "";
         $historyList.append(
             `<li class="flex space-x-2 py-1">
                 <span class="w-8 font-semibold">${moveNumber}.</span>
@@ -578,6 +654,9 @@ function updateHistory(history) {
         );
     }
     $historyList.scrollTop($historyList[0].scrollHeight);
+    // For navigation, use UCI moves directly
+    updateMoveNavigation(history);
+    console.log('fullMoveHistory after update:', fullMoveHistory);
 }
 
 function resetGame() {
@@ -613,6 +692,7 @@ function resetGame() {
             clearHintArrow();
             $('#hint-button').prop('disabled', false);
             showToast("Game reset successfully", "success");
+            setTimeout(startGameWithTimers, 500);
         },
         error: function(xhr, status, error) {
             console.error("Reset failed:", status, error);
@@ -730,6 +810,7 @@ function resumeGame() {
                 $('#resume-modal').addClass('hidden');
                 $('#hint-button').prop('disabled', false);
                 showToast("Game resumed successfully", "success");
+                setTimeout(startGameWithTimers, 500);
             }
         },
         error: function(xhr, status, error) {
@@ -767,4 +848,134 @@ function logout() {
             showToast("Failed to logout", "error");
         }
     });
+}
+
+function updateMoveNavigation(history) {
+    fullMoveHistory = history.slice();
+    navMoveIndex = -1;
+    updateNavButtons();
+    console.log('updateMoveNavigation: fullMoveHistory =', fullMoveHistory, 'navMoveIndex =', navMoveIndex);
+}
+
+function updateNavButtons() {
+    // Disable prev if at first move, next if at latest
+    const atLive = navMoveIndex === -1;
+    const atFirstMove = navMoveIndex === 1;
+    $('#prev-move').prop('disabled', atLive ? fullMoveHistory.length <= 1 : atFirstMove);
+    $('#next-move').prop('disabled', atLive);
+    if (atLive) {
+        $('#next-move').attr('title', 'Already at latest move');
+    } else {
+        $('#next-move').attr('title', 'Go forward');
+    }
+}
+
+function goToMove(index) {
+    if (index < 1) index = 1; // Never show starting position
+    if (index > fullMoveHistory.length) index = fullMoveHistory.length;
+    const tempGame = new Chess();
+    for (let i = 0; i < index; i++) {
+        tempGame.move(fullMoveHistory[i]);
+    }
+    board.position(tempGame.fen());
+    navMoveIndex = index;
+    if (navMoveIndex === fullMoveHistory.length) {
+        board.position(game.fen());
+        navMoveIndex = -1;
+    }
+    updateNavButtons();
+}
+
+function getTimeControlSeconds() {
+    const mode = $('#time-control').val();
+    if (mode === 'blitz') return 300;
+    if (mode === 'rapid') return 900;
+    if (mode === 'classical') return 1800;
+    return 300;
+}
+
+function formatTime(seconds) {
+    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const s = (seconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+}
+
+function updateTimerDisplays() {
+    $('#white-timer').text(formatTime(whiteTime));
+    $('#black-timer').text(formatTime(blackTime));
+}
+
+function stopAllTimers() {
+    clearInterval(whiteTimerInterval);
+    clearInterval(blackTimerInterval);
+    whiteTimerInterval = null;
+    blackTimerInterval = null;
+}
+
+function startTimer(color) {
+    stopAllTimers();
+    if (color === 'w') {
+        whiteTimerInterval = setInterval(() => {
+            whiteTime--;
+            updateTimerDisplays();
+            if (whiteTime <= 0) {
+                stopAllTimers();
+                showTimeout('White');
+            }
+        }, 1000);
+    } else {
+        blackTimerInterval = setInterval(() => {
+            blackTime--;
+            updateTimerDisplays();
+            if (blackTime <= 0) {
+                stopAllTimers();
+                showTimeout('Black');
+            }
+        }, 1000);
+    }
+}
+
+function showTimeout(color) {
+    showToast(`${color} ran out of time!`, 'error');
+    // Disable the board and show losing state
+    board = Chessboard('board', {
+        draggable: false,
+        position: game.fen(),
+        pieceTheme: '/static/img/chesspieces/wikipedia/{piece}.png',
+        orientation: playerColor.toLowerCase()
+    });
+    stopAllTimers();
+    // Show losing state in status and probability
+    if (color === 'White') {
+        $('#status').text('White lost on time!');
+        $('#probability').text('You lose!');
+        $('.probability-fill').css('width', '0%');
+    } else {
+        $('#status').text('Black lost on time!');
+        $('#probability').text('You lose!');
+        $('.probability-fill').css('width', '0%');
+    }
+    $('#hint-button').prop('disabled', true);
+}
+
+function resetTimers() {
+    const seconds = getTimeControlSeconds();
+    whiteTime = seconds;
+    blackTime = seconds;
+    updateTimerDisplays();
+    stopAllTimers();
+}
+
+// --- Patch into game logic ---
+function startGameWithTimers() {
+    resetTimers();
+    // Start timer for the player to move
+    activeColor = game.turn();
+    startTimer(activeColor);
+}
+
+// Switch timers after each move
+function afterMoveSwitchTimer() {
+    activeColor = game.turn();
+    startTimer(activeColor);
 }
